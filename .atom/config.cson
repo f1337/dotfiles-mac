@@ -1,0 +1,19 @@
+"*":
+  core:
+    packagesWithKeymapsDisabled: [
+      "ruby-test"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    showInvisibles: true
+  "ruby-test":
+    shell: "fish"
+    specFramework: "rspec"
+  "toggle-gutter":
+    showNumbers: true
+  welcome:
+    showOnStartup: false
