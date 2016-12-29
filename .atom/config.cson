@@ -9,8 +9,12 @@
       "one-light-syntax"
     ]
   editor:
+    fontSize: 15
     showInvisibles: true
   "ruby-test":
+    rspecAllCommand: "rspec --tty spec --fail-fast"
+    rspecFileCommand: "rspec --tty {relative_path} --fail-fast"
+    rspecSingleCommand: "rspec --tty {relative_path}:{line_number} --fail-fast"
     shell: "fish"
     specFramework: "rspec"
   "toggle-gutter":
