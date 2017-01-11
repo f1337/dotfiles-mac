@@ -116,6 +116,6 @@ https://slack.com/
 
 ### Sync
 
-…for synching everything, [except 1Password vaults](https://discussions.agilebits.com/discussion/38652/1password-synchronization-on-sync-com).
+…for syncing everything, [except 1Password vaults](https://discussions.agilebits.com/discussion/38652/1password-synchronization-on-sync-com).
 
 https://www.sync.com/
