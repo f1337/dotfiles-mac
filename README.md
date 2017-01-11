@@ -8,6 +8,8 @@ First Things
 
 ### Dropbox
 
+…for syncing 1Password vaults.
+
 https://www.dropbox.com/install
 
 ### 1Password
@@ -111,3 +113,9 @@ cp -R .config/mirror.py ~/.config/mirror.py
 ### Slack
 
 https://slack.com/
+
+### Sync
+
+…for synching everything, [except 1Password vaults](https://discussions.agilebits.com/discussion/38652/1password-synchronization-on-sync-com).
+
+https://www.sync.com/
