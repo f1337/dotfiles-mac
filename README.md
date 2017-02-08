@@ -30,6 +30,7 @@ Everything Else
 
 2. …and his packages<sup>[♫](https://youtu.be/PB1rat6lcaw)</sup>:
 
+        apm install git-blame
         apm install ruby-test
         apm install toggle-gutter
         cp -R .atom ~/.atom
