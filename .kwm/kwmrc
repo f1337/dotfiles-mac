@@ -102,7 +102,7 @@ Override default settings for screen 1
 kwmc config split-ratio 0.6
 
 # New splits become the left leaf-node
-kwmc config spawn left
+kwmc config spawn right
 
 /*
     Add custom tiling rules for applications that
