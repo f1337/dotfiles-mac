@@ -28,8 +28,9 @@ Everything Else
 
 1. Install [Atom](https://atom.io/)
 
-2. …and his packages<sup>[♫](https://youtu.be/PB1rat6lcaw)</sup>:
+2. …and its packages<sup>[♫](https://youtu.be/PB1rat6lcaw)</sup>:
 
+        apm install atom-beautify
         apm install git-blame
         apm install ruby-test
         apm install toggle-gutter
