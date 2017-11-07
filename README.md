@@ -32,6 +32,7 @@ Everything Else
 
         apm install atom-beautify
         apm install git-blame
+        apm install language-docker
         apm install ruby-test
         apm install toggle-gutter
         cp -R .atom ~/.atom
