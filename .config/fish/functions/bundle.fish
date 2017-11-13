@@ -1,3 +1,3 @@
 function bundle
-	docker-compose run rails bundle $argv
+	docker-compose run app bundle $argv
 end
