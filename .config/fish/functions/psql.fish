@@ -1,3 +1,3 @@
 function psql
-	docker-compose run pg psql $argv
+	docker-compose run --rm pg psql $argv
 end

@@ -1,3 +1,3 @@
 function bundle
-	docker-compose run app bundle $argv
+	docker-compose run --rm app bundle $argv
 end

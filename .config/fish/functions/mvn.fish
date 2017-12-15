@@ -1,3 +1,3 @@
 function mvn
-  docker-compose run maven mvn $argv
+  docker-compose run --rm maven mvn $argv
 end

@@ -1,3 +1,3 @@
 function rails
-	docker-compose run app bin/rails $argv
+	docker-compose run --rm app bin/rails $argv
 end

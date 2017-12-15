@@ -1,3 +1,3 @@
 function rspec
-	docker-compose run -e SKIP_COVERAGE=true app bundle exec rspec $argv
+	docker-compose run --rm -e SKIP_COVERAGE=true test bundle exec rspec $argv
 end

@@ -1,3 +1,3 @@
 function npm
-	docker-compose run node npm $argv
+	docker-compose run --rm node npm $argv
 end
