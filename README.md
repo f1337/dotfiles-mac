@@ -6,15 +6,9 @@ dotfiles-mac
 First Things
 ------------
 
-### Dropbox
-
-…for syncing 1Password vaults.
-
-https://www.dropbox.com/install
-
 ### 1Password
 
-https://agilebits.com/downloads
+https://1password.com/
 
 ### Homebrew
 
