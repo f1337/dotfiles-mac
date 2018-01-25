@@ -208,18 +208,22 @@ ctrl + shift - c        :   kwmc window -m north
 ctrl + shift - n        :   kwmc window -m east
 # swap + shift - m        :   kwmc window -m mark
 #
-# swap - 1                :   kwmc window -m space 1
-# swap - 2                :   kwmc window -m space 2
-# swap - 3                :   kwmc window -m space 3
-# swap - 4                :   kwmc window -m space 4
-# swap - 5                :   kwmc window -m space 5
+ctrl + alt - 1          :   kwmc window -m space 1
+ctrl + alt - 2          :   kwmc window -m space 2
+ctrl + alt - 3          :   kwmc window -m space 3
+ctrl + alt - 4          :   kwmc window -m space 4
+ctrl + alt - 5          :   kwmc window -m space 5
+ctrl + alt - 6          :   kwmc window -m space 6
+ctrl + alt - 7          :   kwmc window -m space 7
+ctrl + alt - 8          :   kwmc window -m space 8
+ctrl + alt - 9          :   kwmc window -m space 9
 #
 ctrl + alt - left       :   kwmc window -m space left
 ctrl + alt - right      :   kwmc window -m space right
 #
-ctrl + alt - 1          :   kwmc window -m display 0
-ctrl + alt - 2          :   kwmc window -m display 1
-ctrl + alt - 3          :   kwmc window -m display 2
+ctrl + shift - 1        :   kwmc window -m display 0
+ctrl + shift - 2        :   kwmc window -m display 1
+ctrl + shift - 3        :   kwmc window -m display 2
 #
 #
 #
