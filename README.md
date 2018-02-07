@@ -39,7 +39,7 @@ https://www.google.com/chrome/
 
 ```
 brew install cowsay fortune
-gem install lolcat
+sudo gem install lolcat
 cp cows/*.cow /usr/local/opt/cowsay/share/cows/
 ```
 
