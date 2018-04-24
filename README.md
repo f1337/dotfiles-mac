@@ -109,6 +109,10 @@ Live-coding music syntesis
 
 `brew cask install sonic-pi`
 
+### Spotify
+
+`brew cask install spotify`
+
 
 Shell Tweaks
 ------------
