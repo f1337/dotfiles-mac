@@ -13,7 +13,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>Default Bookmark Guid</key>
-	<string>2181260C-AE63-4356-8526-B8794B324F4B</string>
+	<string>0B162EBB-4351-445D-8274-D52C2B2AD04E</string>
 	<key>DimBackgroundWindows</key>
 	<true/>
 	<key>DimInactiveSplitPanes</key>
@@ -206,19 +206,19 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 0 606 456 0 0 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1504 200 796 473 0 0 2560 1058 </string>
+	<string>1504 319 796 473 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>10 10 650 513 0 0 2560 1058 </string>
+	<string>11 441 626 603 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1810 441 738 603 0 0 2560 1058 </string>
+	<string>1898 441 650 603 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1898 12 650 405 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1810 12 738 405 0 0 2560 1058 </string>
+	<string>1543 26 586 387 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>9 441 666 603 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>1156 12 754 405 0 0 1920 1058 </string>
+	<string>1540 26 1002 387 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
 	<string>11 13 1898 1035 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
@@ -6265,7 +6265,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-23T04:09:11Z</date>
+	<date>2018-04-24T04:15:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
