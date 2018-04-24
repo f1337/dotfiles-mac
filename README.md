@@ -19,6 +19,9 @@ http://brew.sh/
 
 `brew cask install 1password`
 
+### Coding Fonts
+
+I'm a fan of [Operator Mono](https://www.typography.com/fonts/operator/styles/screensmart/). There are alternatives, but right now I am too tired to research them and link here.
 
 Browsers
 --------
