@@ -6,21 +6,55 @@ dotfiles-mac
 First Things
 ------------
 
-### 1Password
-
-https://1password.com/
-
 ### Homebrew
 
 http://brew.sh/
 
+### iTerm2
 
-Everything Else
----------------
+    brew cask install iterm2
+    cp com.googlecode.iterm2.plist ~/
+
+### 1Password
+
+`brew cask install 1password`
+
+
+Browsers
+--------
+
+    brew cask install brave
+    brew cask install firefox
+    brew cask install google-chrome
+    brew cask install torbrowser
+
+### Firefox Add-Ons
+
+* HTTPS Everywhere
+* Privacy Badger
+* uBlock Origin
+* 1Password
+* Facebook Container
+* Firefox Multi-Account Containers
+* Temporary Containers
+
+
+Communication Tools
+-------------------
+
+    brew cask install discord
+    brew cask install slack
+    brew cask install stride
+
+
+Development Tools
+-----------------
 
 ### Atom
 
 1. Install [Atom](https://atom.io/)
+
+        brew cask install atom
 
 2. …and its packages<sup>[♫](https://youtu.be/PB1rat6lcaw)</sup>:
 
@@ -31,11 +65,54 @@ Everything Else
         apm install toggle-gutter
         cp -R .atom ~/.atom
 
-### Chrome
+### Docker
 
-https://www.google.com/chrome/
+`brew cask install docker`
+
+### git
+
+```
+cp .gitconfig ~/.gitconfig
+cp .gitignore ~/.gitignore
+```
+
+### Minikube
+
+`brew cask install minikube`
+
+### VirtualBox
+
+`brew cask install virtualbox`
+
+
+Music
+-----
+
+### Google Play Music Player (Unofficial)
+
+Control Play Music via menu bar; scrobbles
+
+`brew cask install marshallofsound-google-play-music-player`
+
+### Last.fm
+
+Scrobbler
+
+`brew cask install lastfm`
+
+### Sonic Pi
+
+Live-coding music syntesis
+
+`brew cask install sonic-pi`
+
+
+Shell Tweaks
+------------
 
 ### cowsay, fortune, lolcat
+
+For whimsy
 
 ```
 brew install cowsay fortune
@@ -43,9 +120,20 @@ sudo gem install lolcat
 cp cows/*.cow /usr/local/opt/cowsay/share/cows/
 ```
 
-### Docker
+### Fish Shell
 
-https://docs.docker.com/docker-for-mac/
+Because zsh nerds aren't annoying enough
+
+```
+brew install fish
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+cp -R .config/fish ~/.config/fish
+curl -L http://get.oh-my.fish | fish
+omf install bobthefish
+```
+
+#### Custom Functions
 
 Some custom functions are provided for the fish shell, which wrap the following
 `docker-compose run …` commands in aliases named for their local counterparts:
@@ -59,33 +147,41 @@ Some custom functions are provided for the fish shell, which wrap the following
 
 Inspired by [Jessie Frazelle's bash wrappers for docker run commands](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc).
 
-### Fish
 
-```
-brew install fish
-echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/fish
-cp -R .config/fish ~/.config/fish
-curl -L http://get.oh-my.fish | fish
-omf install bobthefish
-```
+Timers
+------
 
-### git
+### Time Out
 
-```
-cp .gitconfig ~/.gitconfig
-cp .gitignore ~/.gitignore
-```
+RSI timer
 
-### iTerm2
+`brew cask install time-out`
 
-https://www.iterm2.com/
+### Toggl
+
+Time-tracking
+
+`brew cask install toggl`
+
+### Tomighty
+
+Pomodoro timer
+
+`brew cask install tomighty`
+
+
+Everything Else
+---------------
 
 ### Keybase
 
-https://keybase.io/download
+Key management & end-to-end encrypted messaging
 
-### kwm, khd
+`brew cask install keybase`
+
+### `kwm` + `khd`
+
+Window manager (`kwm`) and hotkey daemon (`khd`)
 
 ```
 brew install koekeishiya/kwm/kwm
@@ -96,23 +192,24 @@ brew services start kwm
 brew services start khd
 ```
 
-### Last.fm
+### Ring
 
-http://www.last.fm/about/trackmymusic
+Video doorbell
 
-### mirror.py
+`brew cask install ring`
 
-```
-git clone https://github.com/f1337/mirror.py.git
-cp -R .config/mirror.py ~/.config/mirror.py
-```
+### Steam
 
-### Slack
+Gaming
 
-https://slack.com/
+`brew cask install steam`
 
 ### Sync
 
-…for syncing everything, [except 1Password vaults](https://discussions.agilebits.com/discussion/38652/1password-synchronization-on-sync-com).
+Cloud storage w/ zero-knowledge-encryption
 
-https://www.sync.com/
+`brew cask install sync`
+
+### VLC
+
+`brew cask install vlc`
