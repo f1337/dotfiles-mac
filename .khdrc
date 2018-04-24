@@ -264,14 +264,14 @@ tree - s                :   kwmc window -c split - mode toggle;\
 # tree - c                :   kwmc window -c type toggle;\
 #                             khd -e "mode activate default"
 #
-tree - h                :   kwmc window -c expand 0.05 west
-tree - t                :   kwmc window -c expand 0.05 south
-tree - c                :   kwmc window -c expand 0.05 north
-tree - n                :   kwmc window -c expand 0.05 east
-tree + shift - h        :   kwmc window -c reduce 0.05 west
-tree + shift - t        :   kwmc window -c reduce 0.05 south
-tree + shift - c        :   kwmc window -c reduce 0.05 north
-tree + shift - n        :   kwmc window -c reduce 0.05 east
+tree - h                :   kwmc window -c expand 0.02 west
+tree - t                :   kwmc window -c expand 0.02 south
+tree - c                :   kwmc window -c expand 0.02 north
+tree - n                :   kwmc window -c expand 0.02 east
+tree + shift - h        :   kwmc window -c reduce 0.02 west
+tree + shift - t        :   kwmc window -c reduce 0.02 south
+tree + shift - c        :   kwmc window -c reduce 0.02 north
+tree + shift - n        :   kwmc window -c reduce 0.02 east
 #
 # tree - p                :   kwmc tree -pseudo create
 # tree + shift - p        :   kwmc tree -pseudo destroy
