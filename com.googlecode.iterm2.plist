@@ -19,9 +19,15 @@
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
-	<true/>
+	<false/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>DoubleClickPerformsSmartSelection</key>
 	<true/>
+	<key>EnableDivisionView</key>
+	<false/>
+	<key>EnableProxyIcon</key>
+	<false/>
 	<key>FocusFollowsMouse</key>
 	<false/>
 	<key>GlobalKeyMap</key>
@@ -139,6 +145,10 @@
 			<string></string>
 		</dict>
 	</dict>
+	<key>HideActivityIndicator</key>
+	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
@@ -152,9 +162,9 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/workspace/mf/dotfiles-mac</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{1011, 1044}</string>
+	<string>{1018, 404}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -206,17 +216,17 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 0 606 456 0 0 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1504 319 796 473 0 0 2560 1058 </string>
+	<string>1044 208 918 512 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>11 441 626 603 0 0 2560 1058 </string>
+	<string>17 24 356 837 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1898 441 650 603 0 0 2560 1058 </string>
+	<string>1059 369 364 495 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1898 12 650 405 0 0 2560 1058 </string>
+	<string>392 24 1028 837 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1543 26 586 387 0 0 2560 1058 </string>
+	<string>18 24 1858 1017 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>9 441 666 603 0 0 2560 1058 </string>
+	<string>1744 30 794 387 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>1540 26 1002 387 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -6255,7 +6265,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mf</string>
+	<string>/Users/mf/workspace/mf/dotfiles-mac</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -6265,27 +6275,31 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-24T04:15:35Z</date>
+	<date>2018-04-25T15:24:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.10000000000000001</real>
+	<real>0.59999999999999998</real>
 	<key>SwitchTabModifier</key>
 	<integer>9</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>9</integer>
 	<key>TabStyle</key>
 	<integer>3</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>UseBorder</key>
-	<false/>
+	<true/>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
