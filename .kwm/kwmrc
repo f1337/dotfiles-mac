@@ -117,6 +117,7 @@ The following commands create rules that
 blacklists an application from Kwms tiling
 */
 kwmc rule owner="Docker" properties={float="true"}
+kwmc rule owner="System Preferences" properties={float="true"}
 kwmc rule owner="Toggl Desktop" properties={float="true"}
 
 /*
