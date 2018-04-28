@@ -233,7 +233,7 @@ Everything Else
 
 ### Alfred
 
-Like Spotlight, but better and without creepy [data collection](https://lifehacker.com/safari-and-spotlight-can-send-data-to-apple-heres-how-1648453540).
+Like Spotlight, but better. And without creepy [data collection](https://lifehacker.com/safari-and-spotlight-can-send-data-to-apple-heres-how-1648453540).
 
 1. Disable data-gathering Spotlight behaviors: System Preferences > Spotlight, then uncheck "Spotlight Suggestions" and "Allow Spotlight Suggestions in Look up".
 2. Disable the Spotlight keyboard shortcut (so that Alfred can take it): System Preferences > Spotlight, then click "Keyboard Shortcuts…", then uncheck "Show Spotlight search"
@@ -246,6 +246,11 @@ Like Spotlight, but better and without creepy [data collection](https://lifehack
 Key management & end-to-end encrypted messaging
 
 `brew cask install keybase`
+
+
+### Privacy settings
+
+This [lifehacker post](https://lifehacker.com/how-to-configure-os-x-to-protect-your-privacy-1716352334) is a good start.
 
 
 ### Ring
