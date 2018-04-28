@@ -233,9 +233,12 @@ Everything Else
 
 ### Alfred
 
-Spotlight enhancements
+Like Spotlight, but better and without creepy [data collection](https://lifehacker.com/safari-and-spotlight-can-send-data-to-apple-heres-how-1648453540).
 
-`brew cask install alfred`
+1. Disable data-gathering Spotlight behaviors: System Preferences > Spotlight, then uncheck "Spotlight Suggestions" and "Allow Spotlight Suggestions in Look up".
+2. Disable the Spotlight keyboard shortcut (so that Alfred can take it): System Preferences > Spotlight, then click "Keyboard Shortcuts…", then uncheck "Show Spotlight search"
+3. `brew cask install alfred`
+4. Aflred > Preferences > General, check "Laurch Alfred at login", the set the Alfred Hotkey to Command-Space.
 
 
 ### Keybase
