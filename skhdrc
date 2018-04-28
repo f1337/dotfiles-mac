@@ -1,0 +1,106 @@
+# NOTE: "chtn" is the Dvorak equivalent of "ijkl".
+# To make the directional hotkeys QWERTY-friendly, simply replace "- h" with "- i", etc.
+
+
+
+############################
+# Full-screen manipulation #
+############################
+
+# toggle window fullscreen
+cmd + ctrl - f : chunkc tiling::window --toggle fullscreen
+
+# toggle window native fullscreen
+cmd + ctrl + shift - f : chunkc tiling::window --toggle native-fullscreen
+
+# toggle window parent zoom
+cmd + ctrl - d : chunkc tiling::window --toggle parent
+
+# rotate tree
+cmd + ctrl - r : chunkc tiling::desktop --rotate 90
+
+# toggle window split type
+cmd + ctrl - s : chunkc tiling::window --toggle split
+
+# float / unfloat window
+cmd + ctrl - t : chunkc tiling::window --toggle float
+
+
+
+################
+# Focus window #
+################
+
+cmd + ctrl - c : chunkc tiling::window --focus north
+cmd + ctrl - h : chunkc tiling::window --focus west
+cmd + ctrl - t : chunkc tiling::window --focus south
+cmd + ctrl - n : chunkc tiling::window --focus east
+# cmd + ctrl - left : chunkc tiling::window --focus prev
+# cmd + ctrl - right : chunkc tiling::window --focus next
+
+
+
+###############
+# Move window #
+###############
+
+# Move focused window to the:
+ctrl + alt - c : chunkc tiling::window --warp north
+ctrl + alt - h : chunkc tiling::window --warp west
+ctrl + alt - t : chunkc tiling::window --warp south
+ctrl + alt - n : chunkc tiling::window --warp east
+
+# Move focused window to the Space to the left
+ctrl + alt - left : chunkc tiling::window --send-to-desktop prev
+
+# Move focused window to the Space to the right
+ctrl + alt - right : chunkc tiling::window --send-to-desktop next
+
+# Move focused window to Space #:
+ctrl + alt - 1 : chunkc tiling::window --send-to-desktop 1
+ctrl + alt - 2 : chunkc tiling::window --send-to-desktop 2
+ctrl + alt - 3 : chunkc tiling::window --send-to-desktop 3
+ctrl + alt - 4 : chunkc tiling::window --send-to-desktop 4
+ctrl + alt - 5 : chunkc tiling::window --send-to-desktop 5
+ctrl + alt - 6 : chunkc tiling::window --send-to-desktop 6
+ctrl + alt - 7 : chunkc tiling::window --send-to-desktop 7
+ctrl + alt - 8 : chunkc tiling::window --send-to-desktop 8
+ctrl + alt - 9 : chunkc tiling::window --send-to-desktop 9
+
+# Move focused window to monitor #:
+cmd + ctrl - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::monitor -f 1
+cmd + ctrl - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
+cmd + ctrl - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
+
+
+
+###############
+# Swap window #
+###############
+
+# Swap focused window's position with the window to the:
+ctrl + shift - c : chunkc tiling::window --swap north
+ctrl + shift - h : chunkc tiling::window --swap west
+ctrl + shift - t : chunkc tiling::window --swap south
+ctrl + shift - n : chunkc tiling::window --swap east
+
+
+
+#################
+# Window sizing #
+#################
+
+# Expand the size of the focused window to the:
+cmd + ctrl + alt + shift - c : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge north
+cmd + ctrl + alt + shift - h : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge west
+cmd + ctrl + alt + shift - t : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge south
+cmd + ctrl + alt + shift - n : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge east
+
+# Contract the size of the focused window to the:
+ctrl + alt + shift - c : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge north
+ctrl + alt + shift - h : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge west
+ctrl + alt + shift - t : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge south
+ctrl + alt + shift - n : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge east
+
+# Equalize size of windows
+ctrl + alt + shift - 0 : chunkc tiling::desktop --equalize

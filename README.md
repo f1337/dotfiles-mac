@@ -3,6 +3,7 @@ dotfiles-mac
 :snowflake: MacOS dotfiles and quick-start for software development.
 
 
+
 First Things
 ------------
 
@@ -10,18 +11,18 @@ First Things
 
 http://brew.sh/
 
+
 ### iTerm2
 
     brew cask install iterm2
     cp com.googlecode.iterm2.plist ~/
 
+
 ### 1Password
 
 `brew cask install 1password`
 
-### Coding Fonts
 
-I'm a fan of [Operator Mono](https://www.typography.com/fonts/operator/styles/screensmart/). There are alternatives, but right now I am too tired to research them and link here.
 
 Browsers
 --------
@@ -42,12 +43,14 @@ Browsers
 * Temporary Containers
 
 
+
 Communication Tools
 -------------------
 
     brew cask install discord
     brew cask install slack
     brew cask install stride
+
 
 
 Development Tools
@@ -68,9 +71,16 @@ Development Tools
         apm install toggle-gutter
         cp -R .atom ~/.atom
 
+
 ### Docker
 
 `brew cask install docker`
+
+
+### Fonts
+
+I'm a fan of [Operator Mono](https://www.typography.com/fonts/operator/styles/screensmart/) for programming. There are alternatives, but right now I am too tired to research them and link here.
+
 
 ### git
 
@@ -79,13 +89,16 @@ cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
 ```
 
+
 ### Minikube
 
 `brew cask install minikube`
 
+
 ### VirtualBox
 
 `brew cask install virtualbox`
+
 
 
 Music
@@ -97,11 +110,13 @@ Control Play Music via menu bar; scrobbles
 
 `brew cask install marshallofsound-google-play-music-player`
 
+
 ### Last.fm
 
 Scrobbler
 
 `brew cask install lastfm`
+
 
 ### Sonic Pi
 
@@ -109,9 +124,11 @@ Live-coding music syntesis
 
 `brew cask install sonic-pi`
 
+
 ### Spotify
 
 `brew cask install spotify`
+
 
 
 Shell Tweaks
@@ -127,9 +144,12 @@ sudo gem install lolcat
 cp cows/*.cow /usr/local/opt/cowsay/share/cows/
 ```
 
+
 ### Fish Shell
 
 Because zsh nerds aren't annoying enough
+
+#### Install
 
 ```
 brew install fish
@@ -155,6 +175,7 @@ Some custom functions are provided for the fish shell, which wrap the following
 Inspired by [Jessie Frazelle's bash wrappers for docker run commands](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc).
 
 
+
 Timers
 ------
 
@@ -164,11 +185,13 @@ RSI timer
 
 `brew cask install time-out`
 
+
 ### Toggl
 
 Time-tracking
 
 `brew cask install toggl`
+
 
 ### Tomighty
 
@@ -177,8 +200,43 @@ Pomodoro timer
 `brew cask install tomighty`
 
 
+
+Window Management
+-----------------
+
+### `chunkwm`
+
+Tiling window manager, ala bspwm and i3.
+
+```
+brew tap crisidev/homebrew-chunkwm
+brew install chunkwm
+cp chunkwmrc ~/.chunkwmrc
+brew services start chunkwm
+```
+
+
+### `skhd`
+
+Hotkey daemon for `chunkwm`. My [keyboard shortcuts](skhdrc) are commented. The [skhd example config](https://github.com/koekeishiya/chunkwm/blob/master/src/plugins/tiling/examples/skhdrc) includes more options.
+
+```
+brew install koekeishiya/formulae/skhd
+cp skhdrc ~/skhdrc
+brew services start skhd
+```
+
+
+
 Everything Else
 ---------------
+
+### Alfred
+
+Spotlight enhancements
+
+`brew cask install alfred`
+
 
 ### Keybase
 
@@ -186,18 +244,6 @@ Key management & end-to-end encrypted messaging
 
 `brew cask install keybase`
 
-### `kwm` + `khd`
-
-Window manager (`kwm`) and hotkey daemon (`khd`)
-
-```
-brew install koekeishiya/kwm/kwm
-brew install koekeishiya/khd/khd
-cp -R .kwm ~/.kwm
-cp .khdrc ~/.khdrc
-brew services start kwm
-brew services start khd
-```
 
 ### Ring
 
@@ -205,17 +251,20 @@ Video doorbell
 
 `brew cask install ring`
 
+
 ### Steam
 
 Gaming
 
 `brew cask install steam`
 
+
 ### Sync
 
 Cloud storage w/ zero-knowledge-encryption
 
 `brew cask install sync`
+
 
 ### VLC
 
