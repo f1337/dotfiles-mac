@@ -39,7 +39,7 @@ Browsers
 * uBlock Origin
 * 1Password
 * Facebook Container
-* Firefox Multi-Account Containers
+* Firefox Multi-Account Containers (Ctrl + . > Tab > 1-n for new container tab)
 * Temporary Containers
 
 
@@ -244,7 +244,11 @@ Like Spotlight, but better. And without creepy [data collection](https://lifehac
 1. Disable data-gathering Spotlight behaviors: System Preferences > Spotlight, then uncheck "Spotlight Suggestions" and "Allow Spotlight Suggestions in Look up".
 2. Disable the Spotlight keyboard shortcut (so that Alfred can take it): System Preferences > Spotlight, then click "Keyboard Shortcuts…", then uncheck "Show Spotlight search"
 3. `brew cask install alfred`
-4. Aflred > Preferences > General, check "Laurch Alfred at login", the set the Alfred Hotkey to Command-Space.
+4. Aflred > Preferences > General, check "Launch Alfred at login", the set the Alfred Hotkey to Command-Space.
+5. [Neuter the Dock](https://medium.com/@rurka/kill-the-dock-for-macos-dcb1d4ba8c8c) (you can manually show/hide it using `cmd + option - d`):
+
+        defaults write com.apple.dock autohide-delay -float 500
+        killall Dock
 
 
 ### Keybase
