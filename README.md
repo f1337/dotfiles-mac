@@ -175,6 +175,12 @@ Some custom functions are provided for the fish shell, which wrap the following
 Inspired by [Jessie Frazelle's bash wrappers for docker run commands](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc).
 
 
+### htop
+
+Process monitor
+
+`brew install htop`
+
 
 Timers
 ------
