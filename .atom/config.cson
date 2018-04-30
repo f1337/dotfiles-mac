@@ -1,13 +1,13 @@
 "*":
+  "atom-beautify":
+    json:
+      brace_style: "expand"
   core:
     packagesWithKeymapsDisabled: [
       "ruby-test"
+      "toggle-gutter"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
     fontFamily: "Operator Mono SSm"
     fontSize: 17
