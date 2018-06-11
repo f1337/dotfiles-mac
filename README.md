@@ -82,12 +82,13 @@ Development Tools
 I'm a fan of [Operator Mono](https://www.typography.com/fonts/operator/styles/screensmart/) for programming. There are alternatives, but right now I am too tired to research them and link here.
 
 
-### git
+### git, tig
 
-Install the Homebrew version of Git, for gitk.
+`tig` is like `gitk`, but runs inside a terminal:
 
 ```
 brew install git
+brew install tig
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
 ```
