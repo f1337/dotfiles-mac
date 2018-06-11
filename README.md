@@ -84,7 +84,10 @@ I'm a fan of [Operator Mono](https://www.typography.com/fonts/operator/styles/sc
 
 ### git
 
+Install the Homebrew version of Git, for gitk.
+
 ```
+brew install git
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore
 ```

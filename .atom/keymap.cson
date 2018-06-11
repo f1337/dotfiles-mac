@@ -30,14 +30,6 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
-'.platform-darwin':
-  'cmd-p': 'unset!'
-  'cmd-t': 'unset!'
-'.platform-darwin, .platform-win32, .platform-linux':
-  'ctrl-g': 'unset!'
-'atom-text-editor':
-  'alt-g g': 'go-to-line:toggle' # emacs/spacemacs
-  'alt-p f': 'fuzzy-finder:toggle-file-finder'
 'atom-workspace':
   'alt-t n': 'toggle-gutter:gutter' # spacemacs
 '.platform-darwin atom-text-editor':
