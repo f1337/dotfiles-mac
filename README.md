@@ -129,11 +129,6 @@ Live-coding music syntesis
 `brew cask install sonic-pi`
 
 
-### Spotify
-
-`brew cask install spotify`
-
-
 
 Shell Tweaks
 ------------
@@ -151,7 +146,7 @@ cp cows/*.cow /usr/local/opt/cowsay/share/cows/
 
 ### Fish Shell
 
-Because zsh nerds aren't annoying enough
+Because zsh nerds aren't annoying enough.
 
 #### Install
 
@@ -179,11 +174,11 @@ Some custom functions are provided for the fish shell, which wrap the following
 Inspired by [Jessie Frazelle's bash wrappers for docker run commands](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc).
 
 
-### htop
+### gotop
 
 Process monitor
 
-`brew install htop`
+`brew install gotop`
 
 
 Timers
