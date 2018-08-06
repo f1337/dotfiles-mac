@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #
-# chunkwm config for desktops/large screens
+# chunkwm config for laptops/small screens
+# chunkwm --config chunkwmrc-small
 #
 
 #
@@ -38,38 +39,18 @@ chunkc core::hotload 0
 #
 
 # default:
-# use "monocle" layout (like a stack of cards with only the top card visible)
-# with large left and right margins
-chunkc set global_desktop_mode           monocle
+# use "bsp" (binary space partition) layout
+# with minimal margins
+chunkc set global_desktop_mode           bsp
 chunkc set global_desktop_offset_top     16
 chunkc set global_desktop_offset_bottom  16
-chunkc set global_desktop_offset_left    480
-chunkc set global_desktop_offset_right   480
+chunkc set global_desktop_offset_left    16
+chunkc set global_desktop_offset_right   16
 chunkc set global_desktop_offset_gap     16
 
 #
 # NOTE: syntax for desktop-specific settings
 #
-
-# desktops 4 & 5:
-# …are where i run full-width, 3-column layouts for coding
-# use "bsp" (binary space partition) layout
-# with minimal margins
-
-chunkc set 4_desktop_mode                bsp
-chunkc set 4_desktop_offset_top          16
-chunkc set 4_desktop_offset_bottom       16
-chunkc set 4_desktop_offset_left         16
-chunkc set 4_desktop_offset_right        16
-chunkc set 4_desktop_offset_gap          16
-
-chunkc set 5_desktop_mode                bsp
-chunkc set 5_desktop_offset_top          16
-chunkc set 5_desktop_offset_bottom       16
-chunkc set 5_desktop_offset_left         16
-chunkc set 5_desktop_offset_right        16
-chunkc set 5_desktop_offset_gap          16
-
 # chunkc set 2_desktop_mode                monocle
 # chunkc set 5_desktop_mode                float
 # chunkc set 3_desktop_offset_top          190
