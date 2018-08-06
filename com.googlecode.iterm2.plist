@@ -15,7 +15,7 @@
 	<key>Default Bookmark Guid</key>
 	<string>0B162EBB-4351-445D-8274-D52C2B2AD04E</string>
 	<key>DimBackgroundWindows</key>
-	<true/>
+	<false/>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
@@ -212,21 +212,21 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>376 678 400 129 0 0 1920 1058 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>8 459 655 278 0 0 2560 1058 </string>
+	<string>952 585 655 278 0 0 2560 1058 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 0 606 456 0 0 1920 1058 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1035 476 770 429 0 0 2560 1058 </string>
+	<string>186 261 770 429 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1898 20 642 1017 0 0 2560 1058 </string>
+	<string>869 364 555 495 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>698 20 1178 1017 0 0 2560 1058 </string>
+	<string>18 20 1404 837 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>18 20 658 1017 0 0 2560 1058 </string>
+	<string>869 576 554 279 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1897 436 644 603 0 0 2560 1058 </string>
+	<string>1898 24 642 387 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>17 20 1860 1017 0 0 2560 1058 </string>
+	<string>18 688 658 351 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>16 436 1508 603 0 0 2560 1058 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -6283,7 +6283,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-04T14:20:51Z</date>
+	<date>2018-08-02T14:58:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
@@ -6297,7 +6297,7 @@
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.35863882211538467</real>
+	<real>0.10000000000000001</real>
 	<key>SwitchTabModifier</key>
 	<integer>9</integer>
 	<key>SwitchWindowModifier</key>
@@ -6319,6 +6319,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.1.7</string>
 </dict>
 </plist>

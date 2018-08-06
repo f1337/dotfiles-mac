@@ -23,7 +23,11 @@ cmd + ctrl - r : chunkc tiling::desktop --rotate 90
 cmd + ctrl - s : chunkc tiling::window --toggle split
 
 # float / unfloat window
-cmd + ctrl - t : chunkc tiling::window --toggle float
+cmd + ctrl + shift - t : chunkc tiling::window --toggle float
+
+# (de-)serialize layout
+cmd + ctrl + alt + shift - d : chunkc tiling::desktop --deserialize ~/.chunkwm.layout
+cmd + ctrl + alt + shift - s : chunkc tiling::desktop --serialize ~/.chunkwm.layout
 
 
 
