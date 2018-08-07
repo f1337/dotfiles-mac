@@ -108,11 +108,21 @@ cp .gitignore ~/.gitignore
 Music
 -----
 
-### Google Play Music Player (Unofficial)
+### Google Play Music Desktop Player (Unofficial)
 
 Control Play Music via menu bar; scrobbles
 
 `brew cask install marshallofsound-google-play-music-player`
+
+
+### GPMDP CLI Remote
+
+Control the Google Play Music Desktop Player via command-line. Good for pausing playback via scripts.
+
+```
+brew tap f1337/gmusic
+brew install gmusic
+```
 
 
 ### Last.fm
@@ -286,3 +296,12 @@ Cloud storage w/ zero-knowledge-encryption
 ### VLC
 
 `brew cask install vlc`
+
+
+TODO
+----
+
+* Ubersicht desktop customization: http://tracesof.net/uebersicht/
+* Unsplash image downloader: https://github.com/unsplash/unsplash-js
+* CLI to set desktop image for current space: http://osxdaily.com/2015/08/28/set-wallpaper-command-line-macosx/#comments
+* A cohesive theme for Atom, iTerm2, Alfred, Fish
