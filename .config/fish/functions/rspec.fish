@@ -1,3 +1,3 @@
 function rspec
-	docker-compose run --rm -e RSPEC_RETRY_RETRY_COUNT=0 -e SKIP_COVERAGE=true test bundle exec rspec $argv
+	docker run --rm -it -v "$PWD":/usr/src/app -w /usr/src/app f1337/rspec $argv
 end
