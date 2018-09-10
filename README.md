@@ -56,6 +56,11 @@ Communication Tools
 Development Tools
 -----------------
 
+### Ansible
+
+`brew install ansible`
+
+
 ### Atom
 
 1. Install [Atom](https://atom.io/)
