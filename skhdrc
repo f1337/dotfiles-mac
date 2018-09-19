@@ -9,6 +9,9 @@
 
 # toggle window fullscreen
 cmd + ctrl - f : chunkc tiling::window --toggle fullscreen
+# cmd + ctrl - f : chunkc tiling::window --toggle fullscreen; chunkc tiling::desktop --padding inc
+# cmd + ctrl + shift - f : chunkc tiling::window --toggle fullscreen; chunkc tiling::desktop --padding dec
+cmd + ctrl - o : chunkc tiling::desktop --toggle offset
 
 # toggle window native fullscreen
 cmd + ctrl + shift - f : chunkc tiling::window --toggle native-fullscreen

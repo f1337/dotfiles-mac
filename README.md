@@ -109,6 +109,9 @@ cp .gitignore ~/.gitignore
 `brew cask install virtualbox`
 
 
+### Visual Studio Code
+
+`brew cask install visual-studio-code`
 
 Music
 -----
