@@ -15,7 +15,6 @@ http://brew.sh/
 ### iTerm2
 
     brew cask install iterm2
-    cp com.googlecode.iterm2.plist ~/
 
 
 ### 1Password
@@ -74,7 +73,9 @@ Development Tools
         apm install language-docker
         apm install ruby-test
         apm install toggle-gutter
-        cp -R .atom ~/.atom
+        ln -s (pwd)/.atom/config.cson ~/.atom/
+        ln -s (pwd)/.atom/keymap.cson ~/.atom/
+        ln -s (pwd)/.atom/styles.less ~/.atom/
 
 
 ### Docker
@@ -103,8 +104,8 @@ brew cask install font-meslo-for-powerline
 ```
 brew install git
 brew install tig
-cp .gitconfig ~/.gitconfig
-cp .gitignore ~/.gitignore
+ln -s (pwd)/.gitconfig ~/.gitconfig
+ln -s (pwd)/.gitignore ~/.gitignore
 ```
 
 
@@ -126,6 +127,9 @@ code --install-extensionjeff-hykin.code-eol
 code --install-extension rebornix.ruby
 code --install-extension robertohuertasm.vscode-icons
 code --install-extension streetsidesoftware.code-spell-checker
+ln -s (pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
+ln -s (pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
+ln -s (pwd)/Code/vsicons.settings.json ~/Library/Application\ Support/Code/User/
 ```
 
 
@@ -188,7 +192,8 @@ Because zsh nerds aren't annoying enough.
 brew install fish
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
-cp -R .config/fish ~/.config/fish
+ln -s (pwd)/.config/fish/config.fish ~/.config/fish/
+ln -s (pwd)/.config/fish/functions ~/.config/fish/
 curl -L http://get.oh-my.fish | fish
 omf install bobthefish
 ```
@@ -250,7 +255,7 @@ Tiling window manager, ala bspwm and i3.
 ```
 brew tap crisidev/homebrew-chunkwm
 brew install chunkwm
-cp chunkwmrc ~/.chunkwmrc
+ln -s (pwd)/chunkwmrc ~/.chunkwmrc
 brew services start chunkwm
 ```
 
@@ -261,7 +266,7 @@ Hotkey daemon for `chunkwm`. My [keyboard shortcuts](skhdrc) are commented. The 
 
 ```
 brew install koekeishiya/formulae/skhd
-cp skhdrc ~/skhdrc
+ln -s (pwd)/skhdrc ~/.skhdrc
 brew services start skhd
 ```
 

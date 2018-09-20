@@ -1,0 +1,49 @@
+{
+  "workbench.statusBar.feedback.visible": false,
+  "editor.fontSize": 17,
+  "editor.fontFamily": "Operator Mono SSm",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "entity.name.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "Solarized Dark",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "code-eol.color": "#666",
+  "code-eol.newlineCharacter": "¬",
+  "code-eol.returnCharacter": "⇠",
+  "code-eol.crlfCharacter": "↵",
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.fontFamily": "MesloLGS-RegularForPowerline",
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.presets.foldersAllDefaultIcon": true,
+  "window.zoomLevel": 0,
+  "terminal.integrated.fontSize": 14
+}
