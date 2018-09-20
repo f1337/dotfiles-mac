@@ -154,7 +154,7 @@ Scrobbler
 
 ### Sonic Pi
 
-Live-coding music syntesis
+Live-coding music synthesis
 
     brew cask install sonic-pi
 
@@ -243,7 +243,7 @@ Pomodoro timer
 Window Management
 -----------------
 
-### `chunkwm`
+### chunkwm
 
 Tiling window manager, ala bspwm and i3.
 
@@ -253,7 +253,7 @@ Tiling window manager, ala bspwm and i3.
     brew services start chunkwm
 
 
-### `skhd`
+### skhd
 
 Hotkey daemon for `chunkwm`. My [keyboard shortcuts](skhdrc) are commented. The [skhd example config](https://github.com/koekeishiya/chunkwm/blob/master/src/plugins/tiling/examples/skhdrc) includes more options.
 
@@ -270,8 +270,8 @@ Everything Else
 
 Like Spotlight, but better. And without creepy [data collection](https://lifehacker.com/safari-and-spotlight-can-send-data-to-apple-heres-how-1648453540).
 
-1. Disable data-gathering Spotlight behaviors: System Preferences > Spotlight, then uncheck "Spotlight Suggestions" and "Allow Spotlight Suggestions in Look up".
-2. Disable the Spotlight keyboard shortcut (so that Alfred can take it): System Preferences > Spotlight, then click "Keyboard Shortcuts…", then uncheck "Show Spotlight search"
+1. Disable data-gathering Spotlight behaviors: System Preferences > Spotlight, then un-check "Spotlight Suggestions" and "Allow Spotlight Suggestions in Look up".
+2. Disable the Spotlight keyboard shortcut (so that Alfred can take it): System Preferences > Spotlight, then click "Keyboard Shortcuts…", then un-check "Show Spotlight search"
 3. `brew cask install alfred`
 4. Alfred > Preferences > General, check "Launch Alfred at login", the set the Alfred Hotkey to Command-Space.
 5. [Neuter the Dock](https://medium.com/@rurka/kill-the-dock-for-macos-dcb1d4ba8c8c) (you can manually show/hide it using `cmd + option - d`):

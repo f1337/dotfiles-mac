@@ -46,5 +46,13 @@
   "vsicons.presets.foldersAllDefaultIcon": true,
   "window.zoomLevel": 0,
   "terminal.integrated.fontSize": 14,
-  "cSpell.diagnosticLevel": "Error"
+  "cSpell.diagnosticLevel": "Error",
+  "cSpell.languageSettings": [
+    {
+        "languageId": "markdown",
+        "ignoreRegExpList": [
+            "/^\\s{4}.+$/gm"
+        ]
+    }
+]
 }
