@@ -1,5 +1,7 @@
 ##
-## OMG PANDAZ!
+## by dcau aka Panda
+## http://www.ascii-art.de/ascii/pqr/panda.txt
+## http://www.heartnsoul.com/ascii_art/bears.txt
 ##
 $the_cow = <<EOC;
     $thoughts       ,,,         ,,,
@@ -11,7 +13,7 @@ $the_cow = <<EOC;
          \$\$\$\$P""Y\$\$\$Y""W\$\$\$\$\$
          \$\$\$\$  $eyes"\$\$\$"$eyes  \$\$\$\$\$
          \$\$\$\$   \$\$\$\$\$   \$\$\$\$
-          \$\$\$\$\$\$\$\$\$\$\$\$\$\$\$\$
+          \$\$DcaU\$\$\$\$\$\$\$\$\$\$
             "Y\$\$\$"*"\$\$\$Y"
                 "\$b.\$\$"
 EOC

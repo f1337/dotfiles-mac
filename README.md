@@ -84,7 +84,16 @@ Development Tools
 
 ### Fonts
 
-I'm a fan of [Operator Mono](https://www.typography.com/fonts/operator/styles/screensmart/) for programming. There are alternatives, but right now I am too tired to research them and link here.
+#### Editor
+
+I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensmart/) for programming. For a free alternative, check out [Matt McFarland's write-up](https://medium.com/@docodemore/an-alternative-to-operator-mono-font-6e5d040e1c7e).
+
+#### Terminal
+
+```
+brew tap homebrew/cask-fonts
+brew cask install font-meslo-for-powerline
+```
 
 
 ### git, tig
@@ -111,7 +120,14 @@ cp .gitignore ~/.gitignore
 
 ### Visual Studio Code
 
-`brew cask install visual-studio-code`
+```
+brew cask install visual-studio-code
+code --install-extensionjeff-hykin.code-eol
+code --install-extension rebornix.ruby
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension streetsidesoftware.code-spell-checker
+```
+
 
 Music
 -----
@@ -312,4 +328,4 @@ TODO
 * Ubersicht desktop customization: http://tracesof.net/uebersicht/
 * Unsplash image downloader: https://github.com/unsplash/unsplash-js
 * CLI to set desktop image for current space: http://osxdaily.com/2015/08/28/set-wallpaper-command-line-macosx/#comments
-* A cohesive theme for Atom, iTerm2, Alfred, Fish
+* A cohesive theme for Atom/VSCode, iTerm2, Alfred, Fish
