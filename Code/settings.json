@@ -46,5 +46,5 @@
   "vsicons.presets.foldersAllDefaultIcon": true,
   "window.zoomLevel": 0,
   "terminal.integrated.fontSize": 14,
-  "cSpell.logLevel": "None"
+  "cSpell.diagnosticLevel": "Error"
 }
