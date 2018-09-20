@@ -220,6 +220,13 @@ Process monitor
 `brew install gotop`
 
 
+### thefuck
+
+Console command auto-suggest
+
+`brew install thefuck`
+
+
 Timers
 ------
 
