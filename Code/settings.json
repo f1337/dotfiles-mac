@@ -54,5 +54,6 @@
             "/^\\s{4}.+$/gm"
         ]
     }
-]
+],
+"search.location": "panel"
 }
