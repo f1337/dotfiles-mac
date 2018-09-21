@@ -118,7 +118,7 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
 ### Visual Studio Code
 
     brew cask install visual-studio-code
-    code --install-extensionjeff-hykin.code-eol
+    code --install-extension jeff-hykin.code-eol
     code --install-extension rebornix.ruby
     code --install-extension robertohuertasm.vscode-icons
     code --install-extension streetsidesoftware.code-spell-checker
