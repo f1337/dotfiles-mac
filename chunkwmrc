@@ -143,9 +143,10 @@ chunkc core::load ffm.so
 # desktops
 chunkc tiling::rule --owner \"Time Out\" --desktop 1 --follow-desktop
 chunkc tiling::rule --owner \"Google Play Music Desktop Player\" --desktop 2 --follow-desktop
+chunkc tiling::rule --owner \"Spotify\" --desktop 2 --follow-desktop
 chunkc tiling::rule --owner Messages --desktop 3 --follow-desktop
 chunkc tiling::rule --owner Slack --desktop 3 --follow-desktop
-chunkc tiling::rule --owner Atom --desktop 5 --follow-desktop
+chunkc tiling::rule --owner \"Visual Studio Code\" --desktop 5 --follow-desktop
 chunkc tiling::rule --owner iTerm --desktop 5 --follow-desktop
 chunkc tiling::rule --owner Firefox --desktop 6 --follow-desktop
 
