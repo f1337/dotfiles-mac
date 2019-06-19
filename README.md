@@ -48,35 +48,11 @@ Communication Tools
 
     brew cask install discord
     brew cask install slack
-    brew cask install stride
 
 
 
 Development Tools
 -----------------
-
-### Ansible
-
-    brew install ansible
-
-
-### Atom
-
-1. Install [Atom](https://atom.io/)
-
-        brew cask install atom
-
-2. …and its packages<sup>[♫](https://youtu.be/PB1rat6lcaw)</sup>:
-
-        apm install atom-beautify
-        apm install git-blame
-        apm install language-docker
-        apm install ruby-test
-        apm install toggle-gutter
-        ln -s (pwd)/.atom/config.cson ~/.atom/
-        ln -s (pwd)/.atom/keymap.cson ~/.atom/
-        ln -s (pwd)/.atom/styles.less ~/.atom/
-
 
 ### Docker
 
@@ -105,45 +81,29 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
     ln -s (pwd)/.gitignore ~/.gitignore
 
 
-### Minikube
-
-    brew cask install minikube
-
-
-### VirtualBox
-
-    brew cask install virtualbox
-
-
 ### Visual Studio Code
 
     brew cask install visual-studio-code
+    code --install-extension castwide.solargraph
+    code --install-extension donjayamanne.githistory
+    code --install-extension dracula-theme.theme-dracula
     code --install-extension jeff-hykin.code-eol
+    code --install-extension lourenci.go-to-spec
+    code --install-extension peterjausovec.vscode-docker
     code --install-extension rebornix.ruby
     code --install-extension robertohuertasm.vscode-icons
     code --install-extension streetsidesoftware.code-spell-checker
+    code --install-extension waderyan.gitblame
+    code --install-extension ziyasal.vscode-open-in-github
+    code --install-extension
+
     ln -s (pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
     ln -s (pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
-    ln -s (pwd)/Code/vsicons.settings.json ~/Library/Application\ Support/Code/User/
+
 
 
 Music
 -----
-
-### Google Play Music Desktop Player (Unofficial)
-
-Control Play Music via menu bar; scrobbles
-
-    brew cask install marshallofsound-google-play-music-player
-
-
-### GPMDP CLI Remote
-
-Control the Google Play Music Desktop Player via command-line. Good for pausing playback via scripts.
-
-    brew tap f1337/gmusic
-    brew install gmusic
-
 
 ### Last.fm
 
@@ -162,6 +122,10 @@ Live-coding music synthesis
 
 Shell Tweaks
 ------------
+
+### autojump
+
+    brew install autojump
 
 ### cowsay, fortune, lolcat
 
@@ -324,4 +288,3 @@ TODO
 * Ubersicht desktop customization: http://tracesof.net/uebersicht/
 * Unsplash image downloader: https://github.com/unsplash/unsplash-js
 * CLI to set desktop image for current space: http://osxdaily.com/2015/08/28/set-wallpaper-command-line-macosx/#comments
-* A cohesive theme for Atom/VSCode, iTerm2, Alfred, Fish (or just use Solarized Dark or gruvbox)

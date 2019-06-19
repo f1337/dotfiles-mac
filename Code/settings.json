@@ -28,10 +28,13 @@
       }
     ]
   },
-  "workbench.colorTheme": "Solarized Dark",
+  "workbench.colorTheme": "Dracula",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "code-eol.color": "#666",
+  "code-eol.style": {
+    "color": "#666",
+    "opacity": 1.0
+  },
   "code-eol.newlineCharacter": "¬",
   "code-eol.returnCharacter": "⇠",
   "code-eol.crlfCharacter": "↵",
@@ -41,8 +44,6 @@
   "terminal.integrated.fontFamily": "MesloLGS-RegularForPowerline",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.presets.foldersAllDefaultIcon": true,
   "window.zoomLevel": 0,
   "terminal.integrated.fontSize": 14,
   "cSpell.diagnosticLevel": "Error",
