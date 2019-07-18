@@ -148,7 +148,11 @@ Because zsh nerds aren't annoying enough.
     ln -s (pwd)/.config/fish/config.fish ~/.config/fish/
     ln -s (pwd)/.config/fish/functions ~/.config/fish/
     curl -L http://get.oh-my.fish | fish
-    omf install https://github.com/f1337/theme-bobthefish
+    omf install bass
+    omf cd
+    cd themes
+    git clone https://github.com/f1337/theme-bobthefish.git ./bobthefish
+    omf theme bobthefish
 
 #### Custom Functions
 
