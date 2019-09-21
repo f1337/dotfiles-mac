@@ -7,5 +7,17 @@
     {
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+alt+cmd+t",
+        "command": "test-explorer.run-this-test"
+    },
+    {
+        "key": "ctrl+alt+cmd+g",
+        "command": "test-explorer.run-this-file"
+    },
+    {
+        "key": "ctrl+alt+cmd+r",
+        "command": "test-explorer.rerun"
     }
 ]

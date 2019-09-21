@@ -85,17 +85,17 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
 
     brew cask install visual-studio-code
     code --install-extension castwide.solargraph
-    code --install-extension donjayamanne.githistory
+    code --install-extension CoenraadS.bracket-pair-colorizer-2
     code --install-extension dracula-theme.theme-dracula
+    code --install-extension eamodio.gitlens
     code --install-extension jeff-hykin.code-eol
     code --install-extension lourenci.go-to-spec
-    code --install-extension peterjausovec.vscode-docker
+    code --install-extension mikestead.dotenv
+    code --install-extension ms-azuretools.vscode-docker
     code --install-extension rebornix.ruby
     code --install-extension robertohuertasm.vscode-icons
     code --install-extension streetsidesoftware.code-spell-checker
-    code --install-extension waderyan.gitblame
     code --install-extension ziyasal.vscode-open-in-github
-    code --install-extension
 
     ln -s (pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
     ln -s (pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
@@ -136,39 +136,6 @@ For whimsy
     cp cows/*.cow /usr/local/opt/cowsay/share/cows/
 
 
-### Fish Shell
-
-Because zsh nerds aren't annoying enough.
-
-#### Install
-
-    brew install fish
-    echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-    chsh -s /usr/local/bin/fish
-    ln -s (pwd)/.config/fish/config.fish ~/.config/fish/
-    ln -s (pwd)/.config/fish/functions ~/.config/fish/
-    curl -L http://get.oh-my.fish | fish
-    omf install bass
-    omf cd
-    cd themes
-    git clone https://github.com/f1337/theme-bobthefish.git ./bobthefish
-    omf theme bobthefish
-
-#### Custom Functions
-
-Some custom functions are provided for the fish shell, which wrap the following
-`docker-compose run …` commands in aliases named for their local counterparts:
-
-- `bundle`
-- `psql`
-- `rails`
-- `rake`
-- `rspec`
-- `rubcop`
-
-Inspired by [Jessie Frazelle's bash wrappers for docker run commands](https://github.com/jessfraz/dotfiles/blob/master/.dockerfunc).
-
-
 ### gotop
 
 Process monitor
@@ -181,6 +148,18 @@ Process monitor
 Console command auto-suggest
 
     brew install thefuck
+
+### zsh
+
+Zombie shell apocalypse
+
+    brew install zsh zsh-completions
+    echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+    chsh -s /usr/local/bin/zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    ln -s $(pwd)/.zshrc ~/.zshrc
+
 
 
 Timers
