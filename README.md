@@ -153,7 +153,7 @@ Console command auto-suggest
 
 Zombie shell apocalypse
 
-    brew install zsh zsh-completions
+    brew install zsh zsh-autosuggestions
     echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
     chsh -s /usr/local/bin/zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
