@@ -18,8 +18,8 @@ curl -H 'Authorization: Client-ID #{accessKey}' -s 'https://api.unsplash.com/pho
 refreshFrequency: '24h'
 
 style: """
-  top: 0%
-  left: 0%
+  top: 0
+  left: 0
   color: #fff
 
   .wallpaper
@@ -33,37 +33,27 @@ style: """
     z-index: -10000
 
   .myimage
-    width: 1920px
     position: absolute
     z-index: -10000
-
-  .darker
-    width: 1920px
-    height: 300px
-    color: green
-    top: 900px
-    position: absolute
-    z-index: -9998
-    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
-
+    object-fit: cover
+    height: 100vh
 """
 
 render: -> """
 <div id='background'></div>
-<div class='darker'></div>
-
 """
 
 # Update the rendered output.
 update: (output, domEl) ->
   data = JSON.parse(output)
-  console.log(data)
+  size = "width: " + window.screen.availWidth + "px;"
+
   url =  data.urls.regular
   mydiv = $(domEl).find('#background')
   html = ''
-  html += "<div class='wallpaper'> "
-  html += "<img src='" +url+ "' class='myimage' >"
-  html += "</div>"
+  html += '<div class="wallpaper"> '
+  html += '<img src="' + url + '" class="myimage" style="' + size + '">'
+  html += '</div>'
 
   # Set the output
   mydiv.html(html)
