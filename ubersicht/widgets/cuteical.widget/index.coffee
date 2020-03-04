@@ -43,6 +43,7 @@ style: """
   top: 10px
   background: rgba(#000, .25)
   border-radius 4px
+  width: 330px
 
   pastel_purple = #ccb5fc
   pastel_pink = #f4bdf7
@@ -94,7 +95,6 @@ style: """
     font-weight: 200
     display: block
     color: text-color
-    width: 330px
 
   .wrapper
     xxwidth:100%

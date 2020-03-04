@@ -36,9 +36,12 @@ def prettify_calendar():
 
 def display_events(html, what_day, raw_events, bullets, bullet_counter):
     events = raw_events.split("\n")
+    html += "<div class='today'>\n<div class='title'>"+what_day+"</div>"
     # display events for the day
-    if len(events) > 1:
-        html += "<div class='today'>\n<div class='title'>"+what_day+"</div>"
+    if len(events) < 2:
+        html += "<div class='event_time'>Live like you wanna " + \
+            "let yesterday burn and throw it in the fire.</div>"
+    else:
         for i in range(len(events)):
             if events[i].find("❤︎") != -1:
                 html += "\n<div class='event_title'>" + \
@@ -53,8 +56,8 @@ def display_events(html, what_day, raw_events, bullets, bullet_counter):
                 # drop the date, only show the time
                 event_time = events[i].split(" at ")
                 html += "\n<div class='event_time'>"+event_time[1]+"</div>"
-        # close  div
-        html += "\n</div>"
+    # close  div
+    html += "\n</div>"
     return html, bullet_counter
 
 
