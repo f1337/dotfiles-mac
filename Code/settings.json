@@ -1,7 +1,7 @@
 {
   "workbench.statusBar.feedback.visible": false,
   "workbench.colorTheme": "Dracula",
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontFamily": "Operator Mono SSm",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -48,25 +48,33 @@
   "cSpell.diagnosticLevel": "Error",
   "cSpell.languageSettings": [
     {
-        "languageId": "markdown",
-        "ignoreRegExpList": [
-            "/^\\s{4}.+$/gm"
-        ]
+      "languageId": "markdown",
+      "ignoreRegExpList": [
+        "/^\\s{4}.+$/gm"
+      ]
     }
-],
-"search.location": "panel",
-"editor.scrollBeyondLastLine": false,
-"extensions.ignoreRecommendations": true,
-"editor.wordWrapColumn": 100,
-"editor.rulers": [
-  80,
-  100,
-  120
-],
-"ruby.codeCompletion": "rcodetools",
-"editor.multiCursorModifier": "alt",
-"editor.tabSize": 2,
-"testExplorer.addToEditorContextMenu": true,
-"rubyTestExplorer.testFramework": "rspec",
-"rubyTestExplorer.logpanel": true
+  ],
+  "editor.scrollBeyondLastLine": false,
+  "extensions.ignoreRecommendations": true,
+  "editor.wordWrapColumn": 100,
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
+  "editor.multiCursorModifier": "alt",
+  "editor.tabSize": 2,
+  "testExplorer.addToEditorContextMenu": true,
+  "rubyTestExplorer.testFramework": "rspec",
+  "rubyTestExplorer.logpanel": true,
+  "ruby.intellisense": "rubyLocate",
+  "ruby.interpreter.commandPath": "$HOME/.rbenv/shims/ruby",
+  "ruby.lint": {
+    "rubocop": {
+      "lint": true,
+      "rails": true
+    }
+  },
+  "explorer.compactFolders": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
