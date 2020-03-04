@@ -196,7 +196,7 @@ Tiling window manager, ala bspwm and i3.
 
     brew tap crisidev/homebrew-chunkwm
     brew install chunkwm
-    ln -s (pwd)/chunkwmrc ~/.chunkwmrc
+    ln -s $(pwd)/chunkwmrc ~/.chunkwmrc
     brew services start chunkwm
 
 
@@ -205,7 +205,7 @@ Tiling window manager, ala bspwm and i3.
 Hotkey daemon for `chunkwm`. My [keyboard shortcuts](skhdrc) are commented. The [skhd example config](https://github.com/koekeishiya/chunkwm/blob/master/src/plugins/tiling/examples/skhdrc) includes more options.
 
     brew install koekeishiya/formulae/skhd
-    ln -s (pwd)/skhdrc ~/.skhdrc
+    ln -s $(pwd)/skhdrc ~/.skhdrc
     brew services start skhd
 
 
@@ -259,6 +259,12 @@ Cloud storage w/ zero-knowledge-encryption
 
     brew cask install sync
 
+### Übersicht
+
+Desktop customization
+
+    brew cask install ubersicht
+    ln -s $(pwd)/ubersicht/widgets/*.widget ~/Library/Application\ Support/Übersicht/widgets/
 
 ### VLC
 
@@ -268,6 +274,4 @@ Cloud storage w/ zero-knowledge-encryption
 TODO
 ----
 
-* Ubersicht desktop customization: http://tracesof.net/uebersicht/
-* Unsplash image downloader: https://github.com/unsplash/unsplash-js
 * CLI to set desktop image for current space: http://osxdaily.com/2015/08/28/set-wallpaper-command-line-macosx/#comments
