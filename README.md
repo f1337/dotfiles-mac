@@ -149,6 +149,7 @@ Console command auto-suggest
 
     brew install thefuck
 
+
 ### zsh
 
 Zombie shell apocalypse
@@ -227,6 +228,13 @@ Like Spotlight, but better. And without creepy [data collection](https://lifehac
         killall Dock
 
 
+### Iris
+
+For sleep and eye health
+
+    brew cask install iris
+
+
 ### Keybase
 
 Key management & end-to-end encrypted messaging
@@ -259,12 +267,14 @@ Cloud storage w/ zero-knowledge-encryption
 
     brew cask install sync
 
+
 ### Übersicht
 
 Desktop customization
 
     brew cask install ubersicht
     ln -s $(pwd)/ubersicht/widgets/*.widget ~/Library/Application\ Support/Übersicht/widgets/
+
 
 ### VLC
 
