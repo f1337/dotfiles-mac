@@ -138,5 +138,4 @@ style: """
   .circle
     font-size: 18px
     color: color4
-
 """

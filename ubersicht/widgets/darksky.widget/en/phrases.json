@@ -318,7 +318,7 @@
       },
       {
          "highlight":[
-            "cold"
+            "cold?"
          ],
          "title":"Hey girl|are you|cold?",
          "subline":"That's because it's freezing outside. Go & look.",
@@ -336,7 +336,7 @@
       },
       {
          "highlight":[
-            "fucking"
+            "Frozen"
          ],
          "title":"Frozen|fucking|weather.",
          "subline":"It's fucking freezing right now, look outside.",
@@ -463,7 +463,7 @@
       },
       {
          "highlight":[
-            "fucking"
+            "thermic."
          ],
          "title":"Hypo|fucking|thermic.",
          "subline":"A friend of mine called Tim said that. Smartypants.",
@@ -472,16 +472,7 @@
       },
       {
          "highlight":[
-            "nipples"
-         ],
-         "title":"Am I|allowed|to say|nipples?",
-         "subline":"Because it's freezing! You get the point.",
-         "max":5,
-         "color":"#004A96"
-      },
-      {
-         "highlight":[
-            "breezy"
+            "breezy."
          ],
          "title":"Breezy|fucking|breezy.",
          "subline":"It's getting cold outside!",
@@ -490,7 +481,7 @@
       },
       {
          "highlight":[
-            "fucking"
+            "foggy."
          ],
          "title":"It's|fucking|foggy.",
          "subline":"It's getting cold outside!",
