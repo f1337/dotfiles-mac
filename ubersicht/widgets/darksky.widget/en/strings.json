@@ -1,12 +1,5 @@
 {
-  "lang": "en-US",
-  "alert": {
-    "begins": "Starts",
-    "expires": "Expires",
-    "level": "Severity Level",
-    "regions": "Region(s)",
-    "severities": ["Low", "Middle", "High"]
-  },
+  "lang": "en",
   "days": {
     "short": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"]
   },
