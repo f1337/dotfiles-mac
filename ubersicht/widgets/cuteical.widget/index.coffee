@@ -131,6 +131,10 @@ style: """
     font-size: 9px
     color: color3
 
+  .fire
+    font-size: 18px
+    color: color3
+
   .circle
     font-size: 18px
     color: color4

@@ -39,8 +39,9 @@ def display_events(html, what_day, raw_events, bullets, bullet_counter):
     html += "<div class='today'>\n<div class='title'>"+what_day+"</div>"
     # display events for the day
     if len(events) < 2:
-        html += "<div class='event_time'>Live like you wanna " + \
-            "let yesterday burn and throw it in the fire.</div>"
+        html += '<div class="event_title">' + \
+            '<span class="fire">☲</span> ' + \
+            'Let yesterday burn and throw it in the fire.</div>'
     else:
         for i in range(len(events)):
             if events[i].find("❤︎") != -1:
