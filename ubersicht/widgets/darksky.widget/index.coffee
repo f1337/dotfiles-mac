@@ -1,8 +1,11 @@
+# Überweather for Übersicht
+# 04 March 2020
+# by Michael Fleet (github/f1337)
 #
-# Name: DarkSky.Widget
-# Destination App: Übersicht
-# Created: 09.Jan.2019
-# Author: Gert Massheimer
+# built upon the following work by others:
+# * Authentic Weather for Übersicht, by by Itzael Martinez (https://github.com/reduxd/authentic-ubersicht)
+# * DarkSky.Widget for Übersicht, by Gert Massheimer (https://github.com/DeltaOS2/darksky.widget)
+# * Nice Weather Widget, by Li Xueli (https://github.com/mixj93/uebersicht-weather-widget)
 #
 # === User Settings ===================================================
 #======================================================================
@@ -11,13 +14,6 @@ iconSet = "mono"
 #
 #--- max 7 days for forecast plus today!
 numberOfDays = 7
-#
-#--- max number of weather alerts
-numberOfAlerts = 1
-#
-#--- show weather alerts (show = true ; don't show = false)
-showAlerts = true
-#showAlerts = false
 #
 #--- your API-key from DarkSky (https://darksky.net/dev)
 apiKey = ""
@@ -95,7 +91,7 @@ updateCurrent: (data, dom) ->
 		snippetContent.push "<img src='darksky.widget/icon/#{ @icon }/#{ s1 }.png'></img>"
 
 	if @showTemp
-    snippetContent.push " #{ Math.round(t) }° "
+    snippetContent.push "#{ Math.round(t) }° "
 
 	$(dom).find('#snippet').html snippetContent.join ''
 
@@ -183,32 +179,28 @@ update: (output, domEl) ->
 
   @updateCurrent(weatherData, domEl)
 
-  # --- generate weather alert message only if there is alert
-  forecast = ''; dayMaxTemp = 0; weekMaxTemp = 0;
-  if weatherData.hasOwnProperty('alerts') && showAlerts == true
-    forecast = ''
-  else
-    if numberOfDays > 8 then numberOfDays = 8
-    if numberOfDays < 1 then numberOfDays = 1
+  forecast = ''
+  if numberOfDays > 8 then numberOfDays = 8
+  if numberOfDays < 1 then numberOfDays = 1
 
-    weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
-    forecast += '<div class="weekdays">'
-    for i in [0..numberOfDays-1]
-      dayMin = Math.round(weatherData.daily.data[i].temperatureLow.toFixed(1))
-      dayMax = Math.round(weatherData.daily.data[i].temperatureHigh.toFixed(1))
-      day = new Date(weatherData.daily.data[i].time * 1000).getDay()
-      weekday = weekDays[day]
-      dayIconName = weatherData.daily.data[i].icon
-      dayIcon = 'darksky.widget/images/' + iconSet + '/' + dayIconName + '.png'
-      forecast += '<div class="weekday-col">' + "\n"
-      forecast += '<p class="temp-low">' + dayMin + '</p>' + "\n"
-      forecast += '<p class="temp-high">' + dayMax + '</p>'
-      forecast += '<img class="weekday-icon" src="' + dayIcon + '" alt="' + dayIconName + '">' + "\n"
-      forecast += '<p class="weekday-name">' + weekday + '</p>' + "\n"
-      forecast += '</div>'
+  weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+  forecast += '<div class="weekdays">'
+  for i in [0..numberOfDays-1]
+    dayMin = Math.round(weatherData.daily.data[i].temperatureLow.toFixed(1))
+    dayMax = Math.round(weatherData.daily.data[i].temperatureHigh.toFixed(1))
+    day = new Date(weatherData.daily.data[i].time * 1000).getDay()
+    weekday = weekDays[day]
+    dayIconName = weatherData.daily.data[i].icon
+    dayIcon = 'darksky.widget/images/' + iconSet + '/' + dayIconName + '.png'
+    forecast += '<div class="weekday-col">' + "\n"
+    forecast += '<p class="temp-low">' + dayMin + '</p>' + "\n"
+    forecast += '<p class="temp-high">' + dayMax + '</p>'
+    forecast += '<img class="weekday-icon" src="' + dayIcon + '" alt="' + dayIconName + '">' + "\n"
+    forecast += '<p class="weekday-name">' + weekday + '</p>' + "\n"
     forecast += '</div>'
+  forecast += '</div>'
 
-    $(domEl).find('.forecast').html(forecast)
+  $(domEl).find('.forecast').html(forecast)
 
 # --- style settings
 style: """
@@ -264,7 +256,7 @@ style: """
     margin 4px 0
 
 	#snippet
-		font-size 5em
+		font-size 6em
 		font-weight 500
 		line-height 1em
     padding 0
@@ -272,10 +264,10 @@ style: """
 
 		img
 			max-width 100px
-			vertical-align bottom
+			vertical-align text-bottom
 
 	h1
-		font-size 3.3em
+		font-size 3em
 		font-weight 600
 		line-height 1em
 		letter-spacing -0.04em
