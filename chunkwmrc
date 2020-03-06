@@ -158,6 +158,7 @@ chunkc tiling::rule --owner \"Alfred Preferences\" --state float
 chunkc tiling::rule --owner \"App Store\" --state float
 chunkc tiling::rule --owner Docker --state float
 chunkc tiling::rule --owner Finder --name Copy --state float
+chunkc tiling::rule --owner GoToMeeting --state float
 chunkc tiling::rule --owner Steam --state float
 chunkc tiling::rule --owner \"System Preferences\" --state float
 chunkc tiling::rule --owner Teensy --state float

@@ -27,6 +27,7 @@ Browsers
 --------
 
     brew cask install brave
+    brew cask install choosy
     brew cask install firefox
     brew cask install google-chrome
     brew cask install torbrowser
