@@ -1,7 +1,16 @@
 #!/bin/bash
 
 #
-# chunkwm config for desktops/large screens
+# determine screen resolution
+resolution_command="$(/usr/sbin/system_profiler SPDisplaysDataType | grep Resolution)"
+resolution="$resolution_command" # Resolution: 1920 x 1080 (1080p FHD - Full High Definition)
+resolution="${resolution#*:}" # 1920 x 1080 (1080p FHD - Full High Definition)
+resolution="${resolution%(*}" # 1920 x 1080
+display_height="${resolution#*x}" # 1080
+display_width="${resolution%x*}" # 1920
+
+#
+# chunkwm config
 #
 
 #
@@ -43,8 +52,14 @@ chunkc core::hotload 0
 chunkc set global_desktop_mode           monocle
 chunkc set global_desktop_offset_top     16
 chunkc set global_desktop_offset_bottom  16
-chunkc set global_desktop_offset_left    480
-chunkc set global_desktop_offset_right   480
+# use 480 or 16 for l/r offsets, depending on resolution
+if [ "$display_width" -gt "1920" ]; then
+  global_desktop_offset_lr="480"
+else
+  global_desktop_offset_lr="16"
+fi
+chunkc set global_desktop_offset_left    $global_desktop_offset_lr
+chunkc set global_desktop_offset_right   $global_desktop_offset_lr
 chunkc set global_desktop_offset_gap     16
 
 #
@@ -85,7 +100,7 @@ chunkc set desktop_gap_step_size         5.0
 chunkc set bsp_spawn_left                1
 chunkc set bsp_optimal_ratio             1.618
 chunkc set bsp_split_mode                optimal
-chunkc set bsp_split_ratio               0.6
+chunkc set bsp_split_ratio               0.5
 
 chunkc set monitor_focus_cycle           1
 chunkc set window_focus_cycle            monitor
@@ -144,7 +159,9 @@ chunkc core::load ffm.so
 chunkc tiling::rule --owner \"Time Out\" --desktop 1 --follow-desktop
 chunkc tiling::rule --owner \"Google Play Music Desktop Player\" --desktop 2 --follow-desktop
 chunkc tiling::rule --owner iTunes --desktop 2 --follow-desktop
+chunkc tiling::rule --owner Music --desktop 2 --follow-desktop
 chunkc tiling::rule --owner Spotify --desktop 2 --follow-desktop
+chunkc tiling::rule --owner TV --desktop 2 --follow-desktop
 chunkc tiling::rule --owner Messages --desktop 3 --follow-desktop
 chunkc tiling::rule --owner WhatsApp --desktop 3 --follow-desktop
 chunkc tiling::rule --owner Slack --desktop 3 --follow-desktop

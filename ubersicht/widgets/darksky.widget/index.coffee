@@ -204,13 +204,9 @@ update: (output, domEl) ->
 
 # --- style settings
 style: """
-  // position of the widget on the screen
-  top 15px
-  left 15px
-  width: 330px;
-
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, 'Open Sans', 'sans-serif';
   color: #ffffff;
+  order: 0
 
   .forecast
     color #c1e1f1
@@ -221,8 +217,6 @@ style: """
       sans-serif
 
   .weather
-    background rgba(#000, .25)
-    border-radius 4px
     overflow-y hidden;
     padding .5rem
 

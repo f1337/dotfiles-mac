@@ -43,7 +43,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "terminal.integrated.fontFamily": "MesloLGS-RegularForPowerline",
   "ruby.format": "rubocop",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "terminal.integrated.fontSize": 14,
   "cSpell.diagnosticLevel": "Error",
   "cSpell.languageSettings": [

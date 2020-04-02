@@ -1,49 +1,65 @@
 # Get calendar events on your desktop with cute bullets
-# Made by Cara Takemoto
+# Originally by Cara Takemoto
 # Using icalBuddy: http://hasseg.org/icalBuddy/
 # Updated icalBuddy with Catalina support from: https://github.com/DavidKaluta/icalBuddy64/releases
-# Requires Python 2.7
+# Refactored by Michael Fleet (github.com/f1337)
 
+delimiter = '❤︎ '
 
 options =
-  widgetEnable: true      # To enable the widget, set value to true. To disable, false.
   theme: 'pastel'         # Theme options: 'pastel', 'dark', or 'bright'
   textColor: 'white'      # Color options: 'default' / html colors or values: 'black', 'white', '#000' etc
 
+bullets = [
+  '<span class="square">■</span>',
+  '<span class="heart">♥</span>',
+  '<span class="triangle">▼</span>',
+  '<span class="circle">●</span>'
+]
 
-#This command shows all of your events for today and tomorrow
-
-command: "python cuteical.widget/calendar_events_txtbullets.py"
-
+command: "./cuteical.widget/icalBuddy -nrd -nc -b '#{delimiter}' -eep 'location,url,notes,attendees' eventsFrom:now to:today"
 
 # the refresh frequency s is seconds and m is minutes
 refreshFrequency: '60s'
 
-options : options
+parseEvents: (output) ->
+  events = []
+  lines = output.split(delimiter)
+  $.each lines, (idx, line) ->
+    if line != ''
+      [title, datetime, crlf] = line.split(/\n\s*/)
+      [date, time] = datetime.split(' at ')
+      bullet = bullets[idx % 4]
+      events.push("""
+        <div class="event_title">#{bullet} #{title}</div>
+        <div class="event_time">#{time}</div>
+      """)
+  if events.length < 1
+    events.push("""
+      <div class="event_title">
+        <span class="fire">☲</span> Let yesterday burn and throw it in the fire.
+      </div>
+    """)
+  return events.join("\n")
 
-render: (output) -> "
-<div class='wrapper'>#{output}</div>
-"
+render: (output) -> """
+<div class="wrapper">#{output}</div>
+"""
 
 update: (output, domEl) ->
-
-  wrapper_display = $(domEl)
-
-  if @options.widgetEnable
-
-    wrapper_display.find('.wrapper').html(output)
-  else
-    wrapper_display.hide()
+  events_html = @parseEvents(output)
+  $(domEl).find('.wrapper').html("""
+    <div class="today">
+      <div class="title">Today</div>
+      #{events_html}
+    </div>
+  """)
 
 
 
 style: """
   font-family Helvetica Neue
-  right: 10px
-  top: 10px
-  background: rgba(#000, .25)
-  border-radius 4px
-  width: 330px
+  order: 1
 
   pastel_purple = #ccb5fc
   pastel_pink = #f4bdf7

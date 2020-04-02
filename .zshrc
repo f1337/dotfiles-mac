@@ -100,7 +100,9 @@ alias ll="ls -la"
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # thefuck
-eval $(thefuck --alias wtf)
+eval $(thefuck --alias f)
+alias wtf="f -y"
+alias wtaf="f -d"
 
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

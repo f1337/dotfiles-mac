@@ -1,6 +1,5 @@
 # Bing photo background created by Sam Roach 1/21/2016
 # Unsplash photo background added by Michael Fleet 3/3/2020
-# backgroud fades to black at the bottom of the screen to make a more usable space for other widgets.
 
 accessKey = ""
 
@@ -15,9 +14,11 @@ curl -H 'Authorization: Client-ID #{accessKey}' -s 'https://api.unsplash.com/pho
 """
 
 # Set the refresh frequency.
-refreshFrequency: '24h'
+refreshFrequency: '1h'
 
 style: """
+  position: absolute;
+  margin: 0
   top: 0
   left: 0
   color: #fff
@@ -45,15 +46,20 @@ render: -> """
 
 # Update the rendered output.
 update: (output, domEl) ->
+
+  if (output == '')
+    return
+
   data = JSON.parse(output)
   size = "width: " + window.screen.availWidth + "px;"
 
   url =  data.urls.regular
-  mydiv = $(domEl).find('#background')
-  html = ''
-  html += '<div class="wallpaper"> '
-  html += '<img src="' + url + '" class="myimage" style="' + size + '">'
-  html += '</div>'
+  if (url)
+    mydiv = $(domEl).find('#background')
+    html = ''
+    html += '<div class="wallpaper"> '
+    html += '<img src="' + url + '" class="myimage" style="' + size + '">'
+    html += '</div>'
 
-  # Set the output
-  mydiv.html(html)
+    # Set the output
+    mydiv.html(html)
