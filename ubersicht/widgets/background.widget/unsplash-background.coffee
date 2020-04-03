@@ -4,7 +4,7 @@
 accessKey = ""
 
 # https://unsplash.com/documentation#get-a-random-photo
-query = "beach" # search terms
+query = "beach,ocean" # search terms
 collections = "" # Public collection ID(‘s) to filter selection. If multiple, comma-separated
 # Filter search results by photo orientation. Valid values are landscape, portrait, and squarish.
 orientation = "landscape"
