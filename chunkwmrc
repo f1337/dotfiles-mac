@@ -10,9 +10,9 @@ else
   is_retina=false
 fi
 resolution="${resolution#*:}" # 1920 x 1080 (1080p FHD - Full High Definition)
-display_width="${resolution%x*}" # 1920
+display_width="${resolution%x [0-9]*}" # 1920
 display_height="${resolution#*x}" # "1080 (...)" or "1800 Retina"
-display_height="${display_height% *}" # 1080
+display_height="${display_height% \(?*}" # 1080
 
 # adjust for retina resolution
 if [ $is_retina == true ]; then
