@@ -16,6 +16,7 @@ http://brew.sh/
 
     brew cask install iterm2
 
+[Dracula theme](https://github.com/dracula/iterm.git) for iTerm2.
 
 ### 1Password
 
@@ -227,7 +228,7 @@ Like Spotlight, but better. And without creepy [data collection](https://lifehac
 
         defaults write com.apple.dock autohide-delay -float 500
         killall Dock
-
+6. Install the [Dracula theme](https://github.com/dracula/alfred).
 
 ### Iris
 
