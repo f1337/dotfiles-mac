@@ -27,11 +27,11 @@ http://brew.sh/
 Browsers
 --------
 
-    brew cask install brave
+    brew cask install brave-browser
     brew cask install choosy
     brew cask install firefox
     brew cask install google-chrome
-    brew cask install torbrowser
+    brew cask install tor-browser
 
 ### Firefox Add-Ons
 
@@ -79,8 +79,8 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
 
     brew install git
     brew install tig
-    ln -s (pwd)/.gitconfig ~/.gitconfig
-    ln -s (pwd)/.gitignore ~/.gitignore
+    ln -s $(pwd)/.gitconfig ~/.gitconfig
+    ln -s $(pwd)/.gitignore ~/.gitignore
 
 
 ### Visual Studio Code
@@ -99,8 +99,8 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
     code --install-extension streetsidesoftware.code-spell-checker
     code --install-extension ziyasal.vscode-open-in-github
 
-    ln -s (pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
-    ln -s (pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
+    ln -s $(pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
+    ln -s $(pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
 
 
 
@@ -197,7 +197,7 @@ Window Management
 
 Tiling window manager, ala bspwm and i3.
 
-    brew tap crisidev/homebrew-chunkwm
+    brew tap koekeishiya/formulae
     brew install chunkwm
     ln -s $(pwd)/chunkwmrc ~/.chunkwmrc
     brew services start chunkwm
@@ -229,6 +229,8 @@ Like Spotlight, but better. And without creepy [data collection](https://lifehac
         defaults write com.apple.dock autohide-delay -float 500
         killall Dock
 6. Install the [Dracula theme](https://github.com/dracula/alfred).
+7. Install the [Emoji Snippet Pack](http://joelcalifa.com/blog/alfred-emoji-snippet-pack/)
+
 
 ### Iris
 
@@ -244,16 +246,17 @@ Key management & end-to-end encrypted messaging
     brew cask install keybase
 
 
+### Pock
+
+Dock-like features on the touchbar.
+
+    brew cask install pock
+    ln -s $(pwd)/Library/Preferences/com.pigigaldi.pock.plist ~/Library/Preferences/com.pigigaldi.pock.plist
+
+
 ### Privacy settings
 
 This [lifehacker post](https://lifehacker.com/how-to-configure-os-x-to-protect-your-privacy-1716352334) is a good start.
-
-
-### Ring
-
-Video doorbell
-
-    brew cask install ring
 
 
 ### Steam
