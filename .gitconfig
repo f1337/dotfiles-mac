@@ -1,3 +1,7 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/code --wait
+[diff]
+  tool = visual-studio-code
+[difftool "visual-studio-code"]
+  cmd = /usr/local/bin/code --wait --diff $LOCAL $REMOTE
