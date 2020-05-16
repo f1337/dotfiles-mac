@@ -77,10 +77,12 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
 
 `tig` is like `gitk`, but runs inside a terminal:
 
-    brew install git
+    brew install git # not really necessary in 10.15
     brew install tig
     ln -s $(pwd)/.gitconfig ~/.gitconfig
     ln -s $(pwd)/.gitignore ~/.gitignore
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
 
 
 ### Visual Studio Code
