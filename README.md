@@ -73,13 +73,6 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
     brew cask install font-meslo-for-powerline
 
 
-### gimp
-
-GNU Image Manipulation Program
-
-    brew cask install gimp
-
-
 ### git, tig
 
 `tig` is like `gitk`, but runs inside a terminal:
@@ -90,6 +83,13 @@ GNU Image Manipulation Program
     ln -s $(pwd)/.gitignore ~/.gitignore
     git config --global user.name "Your Name"
     git config --global user.email you@example.com
+
+
+### Seashore
+
+MacOS Fork of the GNU Image Manipulation Program. Like Photoshop, but open-source.
+
+    brew cask install seashore
 
 
 ### Visual Studio Code
