@@ -73,6 +73,13 @@ I use [Operator Mono](https://www.typography.com/fonts/operator/styles/screensma
     brew cask install font-meslo-for-powerline
 
 
+### gimp
+
+GNU Image Manipulation Program
+
+    brew cask install gimp
+
+
 ### git, tig
 
 `tig` is like `gitk`, but runs inside a terminal:
