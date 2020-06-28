@@ -1,0 +1,62 @@
+#!/usr/bin/env sh
+
+# global settings
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          on
+yabai -m config window_placement             second_child
+yabai -m config window_topmost               off
+yabai -m config window_opacity               off
+yabai -m config window_opacity_duration      0.0
+yabai -m config window_shadow                on
+yabai -m config insert_feedback_color        0xaad75f5f
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        0.90
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 off
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+
+# general space settings
+# yabai -m config layout                       managed
+yabai -m config layout                       managed
+yabai -m config top_padding                  16
+yabai -m config bottom_padding               16
+yabai -m config left_padding                 16
+yabai -m config right_padding                16
+yabai -m config window_gap                   16
+
+# use bsp for space 5
+yabai -m config --space 5 layout bsp
+
+# automatically open certain apps on specific spaces
+yabai -m rule --add app="^Time Out$" space=^1
+yabai -m rule --add app="^Google Play Music Desktop Player$" space=^2
+yabai -m rule --add app="^iTunes$" space=^2
+yabai -m rule --add app="^Music$" space=^2
+yabai -m rule --add app="^Spotify$" space=^2
+yabai -m rule --add app="^TV$" space=^2
+yabai -m rule --add app="^Messages$" space=^3
+yabai -m rule --add app="^WhatsApp$" space=^3
+yabai -m rule --add app="^Slack$" space=^3
+yabai -m rule --add app="^Turtl$" space=^4
+yabai -m rule --add app="^Atom$" space=^5
+yabai -m rule --add app="^Visual Studio Code$" space=^5
+yabai -m rule --add app="^Hyper$" space=^5
+yabai -m rule --add app="^iTerm$" space=^5
+yabai -m rule --add app="^Terminal$" space=^5
+yabai -m rule --add app="^Firefox$" space=^6
+yabai -m rule --add app="^Chrome$" space=^6
+
+# floats
+yabai -m rule --add app="^Alfred Preferences$" manage=off
+yabai -m rule --add app="^App Store$" manage=off
+yabai -m rule --add app="^Docker$" manage=off
+yabai -m rule --add app="^Finder$" title="^Copy$" manage=off
+yabai -m rule --add app="^GoToMeeting$" manage=off
+yabai -m rule --add app="^Steam$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Teensy$" manage=off
+
+
+echo "yabai configuration loaded.."

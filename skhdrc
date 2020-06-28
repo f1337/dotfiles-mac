@@ -8,29 +8,27 @@
 ############################
 
 # toggle window fullscreen
-cmd + ctrl - f : chunkc tiling::window --toggle fullscreen
-# cmd + ctrl - f : chunkc tiling::window --toggle fullscreen; chunkc tiling::desktop --padding inc
-# cmd + ctrl + shift - f : chunkc tiling::window --toggle fullscreen; chunkc tiling::desktop --padding dec
-cmd + ctrl - o : chunkc tiling::desktop --toggle offset
+cmd + ctrl - f : yabai -m window --toggle zoom-fullscreen
+cmd + ctrl - o : yabai -m space --toggle padding
 
 # toggle window native fullscreen
-cmd + ctrl + shift - f : chunkc tiling::window --toggle native-fullscreen
+cmd + ctrl + shift - f : yabai -m window --toggle native-fullscreen
 
 # toggle window parent zoom
-cmd + ctrl - d : chunkc tiling::window --toggle parent
+cmd + ctrl - d : yabai -m window --toggle zoom-parent
 
 # rotate tree
-cmd + ctrl - r : chunkc tiling::desktop --rotate 90
+# cmd + ct rl - r : chunkc tiling::desktop --rotate 90
 
 # toggle window split type
-cmd + ctrl - s : chunkc tiling::window --toggle split
+cmd + ctrl - s : yabai -m window --toggle split
 
 # float / unfloat window
-cmd + ctrl + shift - t : chunkc tiling::window --toggle float
+cmd + ctrl + shift - t : yabai -m window --toggle float
 
 # (de-)serialize layout
-cmd + ctrl + alt + shift - d : chunkc tiling::desktop --deserialize ~/.chunkwm.layout
-cmd + ctrl + alt + shift - s : chunkc tiling::desktop --serialize ~/.chunkwm.layout
+# cmd + ctrl + alt + shift - d : chunkc tiling::desktop --deserialize ~/.chunkwm.layout
+# cmd + ctrl + alt + shift - s : chunkc tiling::desktop --serialize ~/.chunkwm.layout
 
 
 
@@ -38,12 +36,12 @@ cmd + ctrl + alt + shift - s : chunkc tiling::desktop --serialize ~/.chunkwm.lay
 # Focus window #
 ################
 
-cmd + ctrl - c : chunkc tiling::window --focus north
-cmd + ctrl - h : chunkc tiling::window --focus west
-cmd + ctrl - t : chunkc tiling::window --focus south
-cmd + ctrl - n : chunkc tiling::window --focus east
-# cmd + ctrl - left : chunkc tiling::window --focus prev
-# cmd + ctrl - right : chunkc tiling::window --focus next
+cmd + ctrl - c : yabai -m window --focus north
+cmd + ctrl - h : yabai -m window --focus west
+cmd + ctrl - t : yabai -m window --focus south
+cmd + ctrl - n : yabai -m window --focus east
+# cmd + ctrl - left : yabai -m window --focus prev
+# cmd + ctrl - right : yabai -m window --focus next
 
 
 
@@ -52,32 +50,32 @@ cmd + ctrl - n : chunkc tiling::window --focus east
 ###############
 
 # Move focused window to the:
-ctrl + alt - c : chunkc tiling::window --warp north
-ctrl + alt - h : chunkc tiling::window --warp west
-ctrl + alt - t : chunkc tiling::window --warp south
-ctrl + alt - n : chunkc tiling::window --warp east
+ctrl + alt - c : yabai -m window --warp north
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - t : yabai -m window --warp south
+ctrl + alt - n : yabai -m window --warp east
 
 # Move focused window to the Space to the left
-ctrl + alt - left : chunkc tiling::window --send-to-desktop prev
+ctrl + alt - left : yabai -m window --space prev
 
 # Move focused window to the Space to the right
-ctrl + alt - right : chunkc tiling::window --send-to-desktop next
+ctrl + alt - right : yabai -m window --space next
 
 # Move focused window to Space #:
-ctrl + alt - 1 : chunkc tiling::window --send-to-desktop 1
-ctrl + alt - 2 : chunkc tiling::window --send-to-desktop 2
-ctrl + alt - 3 : chunkc tiling::window --send-to-desktop 3
-ctrl + alt - 4 : chunkc tiling::window --send-to-desktop 4
-ctrl + alt - 5 : chunkc tiling::window --send-to-desktop 5
-ctrl + alt - 6 : chunkc tiling::window --send-to-desktop 6
-ctrl + alt - 7 : chunkc tiling::window --send-to-desktop 7
-ctrl + alt - 8 : chunkc tiling::window --send-to-desktop 8
-ctrl + alt - 9 : chunkc tiling::window --send-to-desktop 9
+ctrl + alt - 1 : yabai -m window --space 1
+ctrl + alt - 2 : yabai -m window --space 2
+ctrl + alt - 3 : yabai -m window --space 3
+ctrl + alt - 4 : yabai -m window --space 4
+ctrl + alt - 5 : yabai -m window --space 5
+ctrl + alt - 6 : yabai -m window --space 6
+ctrl + alt - 7 : yabai -m window --space 7
+ctrl + alt - 8 : yabai -m window --space 8
+ctrl + alt - 9 : yabai -m window --space 9
 
 # Move focused window to monitor #:
-cmd + ctrl - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::monitor -f 1
-cmd + ctrl - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
-cmd + ctrl - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
+cmd + ctrl - 1  : yabai -m window --display 1#; yabai -m display --focus 1
+cmd + ctrl - 2  : yabai -m window --display 2#; yabai -m display --focus 2
+cmd + ctrl - 3  : yabai -m window --display 3#; yabai -m display --focus 3
 
 
 
@@ -86,10 +84,10 @@ cmd + ctrl - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::moni
 ###############
 
 # Swap focused window's position with the window to the:
-ctrl + shift - c : chunkc tiling::window --swap north
-ctrl + shift - h : chunkc tiling::window --swap west
-ctrl + shift - t : chunkc tiling::window --swap south
-ctrl + shift - n : chunkc tiling::window --swap east
+ctrl + shift - c : yabai -m window --swap north
+ctrl + shift - h : yabai -m window --swap west
+ctrl + shift - t : yabai -m window --swap south
+ctrl + shift - n : yabai -m window --swap east
 
 
 
@@ -97,17 +95,17 @@ ctrl + shift - n : chunkc tiling::window --swap east
 # Window sizing #
 #################
 
-# Expand the size of the focused window to the:
-cmd + ctrl + alt + shift - c : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge north
-cmd + ctrl + alt + shift - h : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge west
-cmd + ctrl + alt + shift - t : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge south
-cmd + ctrl + alt + shift - n : chunkc tiling::window --use-temporary-ratio 0.02 --adjust-window-edge east
+# increase window size
+cmd + ctrl + alt + shift - c : yabai -m window --resize top:0:-20
+cmd + ctrl + alt + shift - h : yabai -m window --resize left:-20:0
+cmd + ctrl + alt + shift - t : yabai -m window --resize bottom:0:20
+cmd + ctrl + alt + shift - n : yabai -m window --resize right:20:0
 
-# Contract the size of the focused window to the:
-ctrl + alt + shift - c : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge north
-ctrl + alt + shift - h : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge west
-ctrl + alt + shift - t : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge south
-ctrl + alt + shift - n : chunkc tiling::window --use-temporary-ratio -0.02 --adjust-window-edge east
+# decrease window size
+ctrl + alt + shift - c : yabai -m window --resize top:0:20 north
+ctrl + alt + shift - h : yabai -m window --resize left:20:0
+ctrl + alt + shift - t : yabai -m window --resize bottom:0:-20
+ctrl + alt + shift - n : yabai -m window --resize right:-20:0
 
-# Equalize size of windows
-ctrl + alt + shift - 0 : chunkc tiling::desktop --equalize
+# balance size of windows
+ctrl + alt + shift - 0 : yabai -m space --balance

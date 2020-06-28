@@ -1,0 +1,18 @@
+##
+## by Joan Stark (jgs)
+## https://www.oocities.org/spunk1111/zoo.htm#sloth
+## -=[ sloth ]=-  9/00
+##
+$the_cow = <<EOC;
+   $thoughts  `""==,,__
+    $thoughts   `"==..__"=..__ _    _..-==""_
+     $thoughts       .-,`"=/ /\\ \\""/_)==""``
+      $thoughts     ( (    | | | \\/ |
+       $thoughts     \\ '.  |  \\;  \\ /
+        $thoughts     |  \\ |   |   ||
+         ,-._.'  |_|   |   ||
+        .\\_/\\     -'   ;   Y
+       |  `  |        /    |-.
+       '. __/_    _.-'     /'
+              `'-.._____.-'
+EOC

@@ -65,7 +65,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git notify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,6 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -la"
+
+# ansible
+export ANSIBLE_COW_SELECTION=sloth
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -137,3 +140,13 @@ POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="228"
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND="235"
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="203"
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="235"
+
+# notifications
+zstyle ':notify:*' activate-terminal yes
+#zstyle ':notify:*' blacklist-regex 'find|git'
+zstyle ':notify:*' command-complete-timeout 1
+zstyle ':notify:*' enable-on-ssh yes
+zstyle ':notify:*' error-sound "my-programming"
+zstyle ':notify:*' error-title '👎🏻 (#{time_elapsed})'
+zstyle ':notify:*' success-sound "roger"
+zstyle ':notify:*' success-title '👍🏻 (#{time_elapsed})'

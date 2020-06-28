@@ -18,6 +18,12 @@ http://brew.sh/
 
 [Dracula theme](https://github.com/dracula/iterm.git) for iTerm2.
 
+
+### Mac App Store CLI
+
+    brew cask install mas
+
+
 ### 1Password
 
     brew cask install 1password
@@ -92,13 +98,22 @@ MacOS Fork of the GNU Image Manipulation Program. Like Photoshop, but open-sourc
     brew cask install seashore
 
 
+### Screen
+
+Pairing/mobbing tool, from one of the original Screenhero co-founders.
+
+    brew cask install screen
+
+
 ### Visual Studio Code
 
     brew cask install visual-studio-code
-    code --install-extension castwide.solargraph
+    code --install-extension bierner.markdown-emoji
+    code --install-extension bierner.markdown-preview-github-styles
     code --install-extension CoenraadS.bracket-pair-colorizer-2
     code --install-extension dracula-theme.theme-dracula
     code --install-extension eamodio.gitlens
+    code --install-extension esbenp.prettier-vscode
     code --install-extension jeff-hykin.code-eol
     code --install-extension lourenci.go-to-spec
     code --install-extension mikestead.dotenv
@@ -106,6 +121,8 @@ MacOS Fork of the GNU Image Manipulation Program. Like Photoshop, but open-sourc
     code --install-extension rebornix.ruby
     code --install-extension robertohuertasm.vscode-icons
     code --install-extension streetsidesoftware.code-spell-checker
+    code --install-extension TabNine.tabnine-vscode
+    code --install-extension wingrunr21.vscode-ruby
     code --install-extension ziyasal.vscode-open-in-github
 
     ln -s $(pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
@@ -181,6 +198,20 @@ Process monitor
     brew install gotop
 
 
+### sounds
+
+For terminal-notifier + zsh
+
+    cp sounds/*.aif ~/Library/Sounds/
+
+
+### terminal-notifier
+
+Notify when terminal processes end
+
+    brew install terminal-notifier
+
+
 ### thefuck
 
 Console command auto-suggest
@@ -196,9 +227,9 @@ Zombie shell apocalypse
     echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
     chsh -s /usr/local/bin/zsh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    git clone https://github.com/bhilburn/powerlevel9k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
+    git clone git@github.com:marzocchi/zsh-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify
     ln -s $(pwd)/.zshrc ~/.zshrc
-
 
 
 Timers
@@ -229,23 +260,25 @@ Pomodoro timer
 Window Management
 -----------------
 
-### chunkwm
+### yabai
 
 Tiling window manager, ala bspwm and i3.
 
     brew tap koekeishiya/formulae
-    brew install chunkwm
-    ln -s $(pwd)/chunkwmrc ~/.chunkwmrc
-    brew services start chunkwm
+    brew install koekeishiya/formulae/yabai
+    ln -s $(pwd)/yabairc ~/.yabairc
+    brew services start yabai
+    #brew services start koekeishiya/formulae/yabai
 
 
 ### skhd
 
-Hotkey daemon for `chunkwm`. My [keyboard shortcuts](skhdrc) are commented. The [skhd example config](https://github.com/koekeishiya/chunkwm/blob/master/src/plugins/tiling/examples/skhdrc) includes more options.
+Hotkey daemon for `yabai`. My [keyboard shortcuts](skhdrc) are commented. The [skhd example config](https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc) includes more options.
 
     brew install koekeishiya/formulae/skhd
     ln -s $(pwd)/skhdrc ~/.skhdrc
     brew services start skhd
+    #brew services start koekeishiya/formulae/skhd
 
 
 
@@ -300,6 +333,13 @@ This [lifehacker post](https://lifehacker.com/how-to-configure-os-x-to-protect-y
 Cloud storage w/ zero-knowledge-encryption
 
     brew cask install sync
+
+
+### Teensy
+
+For flashing keyboard firmware.
+
+    brew cask install teensy
 
 
 ### Übersicht
