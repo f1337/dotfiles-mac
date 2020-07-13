@@ -18,16 +18,17 @@ yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
 
 # general space settings
-# yabai -m config layout                       managed
-yabai -m config layout                       managed
+yabai -m config layout                       bsp
 yabai -m config top_padding                  16
 yabai -m config bottom_padding               16
-yabai -m config left_padding                 16
-yabai -m config right_padding                16
+yabai -m config left_padding                 480
+yabai -m config right_padding                480
 yabai -m config window_gap                   16
 
 # use bsp for space 5
-yabai -m config --space 5 layout bsp
+yabai -m config --space 5 layout             bsp
+yabai -m config --space 5 left_padding       16
+yabai -m config --space 5 right_padding      16
 
 # automatically open certain apps on specific spaces
 yabai -m rule --add app="^Time Out$" space=^1
