@@ -133,6 +133,13 @@ Pairing/mobbing tool, from one of the original Screenhero co-founders.
 Gaming
 ------
 
+### Bluestacks
+
+Android emulator. Does not play nicely with Docker (as of 2020-07).
+
+    brew cask install bluestacks
+
+
 ### Minecraft
 
 1. Install Java & Minecraft via Homebrew
@@ -182,11 +189,12 @@ Shell Tweaks
 
     brew install autojump
 
-### cowsay, fortune, lolcat
+
+### cowsay, fortune, lolcat, ponysay
 
 For whimsy
 
-    brew install cowsay fortune
+    brew install cowsay fortune ponysay
     sudo gem install lolcat
     cp cows/*.cow /usr/local/opt/cowsay/share/cows/
 
@@ -230,6 +238,7 @@ Zombie shell apocalypse
     git clone https://github.com/bhilburn/powerlevel9k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
     git clone git@github.com:marzocchi/zsh-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify
     ln -s $(pwd)/.zshrc ~/.zshrc
+
 
 
 Timers

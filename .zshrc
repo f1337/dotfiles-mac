@@ -144,7 +144,7 @@ POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="235"
 # notifications
 zstyle ':notify:*' activate-terminal yes
 #zstyle ':notify:*' blacklist-regex 'find|git'
-zstyle ':notify:*' command-complete-timeout 1
+zstyle ':notify:*' command-complete-timeout 10
 zstyle ':notify:*' enable-on-ssh yes
 zstyle ':notify:*' error-sound "my-programming"
 zstyle ':notify:*' error-title '👎🏻 (#{time_elapsed})'
