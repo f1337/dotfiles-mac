@@ -5,8 +5,8 @@
          "highlight":[
             "love"
          ],
-         "title":"Fucking|love is|in the air.",
-         "subline":"Take off your shirt and get wet.",
+         "title":"Forking|love is|in the air.",
+         "subline":"Put on your swim gear and get wet.",
          "min":25,
          "condition":"clear",
          "color":"#FF0060"
@@ -15,7 +15,7 @@
          "highlight":[
             "raining"
          ],
-         "title":"It's|fucking|raining.",
+         "title":"It's|forking|raining.",
          "subline":"You can look outside to get more information.",
          "condition":"raining",
          "color":"#007EFF"
@@ -24,7 +24,7 @@
          "highlight":[
             "cloudy"
          ],
-         "title":"It's|fucking|cloudy.",
+         "title":"It's|forking|cloudy.",
          "subline":"You can look outside to get more information.",
          "condition":"cloudy",
          "color":"#007EFF"
@@ -33,7 +33,7 @@
          "highlight":[
             "Freezing"
          ],
-         "title":"Freezing|cold like|a fucking|fridge.",
+         "title":"Freezing|cold like|a forking|fridge.",
          "subline":"You can look outside to get more information.",
          "max":4,
          "color":"#004A96"
@@ -42,8 +42,8 @@
          "highlight":[
             "nice."
          ],
-         "title":"It's|fucking|nice.",
-         "subline":"Take off your shirt but keep on your panties.",
+         "title":"It's|forking|nice.",
+         "subline":"Lose the hoodie, but keep on your shorts.",
          "min":20,
          "max":30,
          "color":"#FF0060"
@@ -52,8 +52,8 @@
          "highlight":[
             "snow."
          ],
-         "title":"Holy|fucking|snow.",
-         "subline":"Still not ready for building that fucking snow castle.",
+         "title":"Holy|forking|snow.",
+         "subline":"Still not ready for building that forking snow castle.",
          "condition":"snow",
          "color":"#007EFF"
       },
@@ -61,8 +61,8 @@
          "color":"#007EFF",
          "condition":"clear",
          "min":5,
-         "title":"It's|fucking|alright|today.",
-         "subline":"Not amazeballs but also not fucking shitty.",
+         "title":"It's|forking|alright|today.",
+         "subline":"Not amazeballs but also not forking shitty.",
          "highlight":[
             "alright"
          ],
@@ -72,8 +72,8 @@
          "highlight":[
             "freezing"
          ],
-         "title":"Are you|freezing|fucking|serious?",
-         "subline":"You can't look outside because of fucking snow.",
+         "title":"Are you|freezing|forking|serious?",
+         "subline":"You can't look outside because of forking snow.",
          "max":3,
          "condition":"snow",
          "color":"#007EFF"
@@ -82,7 +82,7 @@
          "highlight":[
             "oven."
          ],
-         "title":"It's like|a fucking|oven.",
+         "title":"It's like|a forking|oven.",
          "subline":"Just get naked, now - And get some ice cream.",
          "min":30,
          "color":"#FFC600"
@@ -91,7 +91,7 @@
          "color":"#9F9F9F",
          "condition":"cloudy",
          "min":5,
-         "title":"It's just|fucking|grey.",
+         "title":"It's just|forking|grey.",
          "subline":"Just clouds & no love, but computer games.",
          "highlight":[
             "grey."
@@ -102,7 +102,7 @@
          "highlight":[
             "snow."
          ],
-         "title":"Can't see|because|fucking|snow.",
+         "title":"Can't see|because|forking|snow.",
          "subline":"Try looking outside for more information, try it...",
          "condition":"snow",
          "color":"#FFFFFF"
@@ -111,7 +111,7 @@
          "highlight":[
             "snow."
          ],
-         "title":"Can't see|because|fucking|snow.",
+         "title":"Can't see|because|forking|snow.",
          "subline":"Try looking outside for more information, try it...",
          "condition":"sleet",
          "color":"#FFFFFF"
@@ -120,8 +120,8 @@
          "color":"#FF0060",
          "condition":"clear",
          "min":20,
-         "title":"Fucking|Amaze|Balls.",
-         "subline":"So fucking nice outside, holy schmoly.",
+         "title":"Forking|Amaze|Balls.",
+         "subline":"So forking nice outside, holy schmoly.",
          "highlight":[
             "Amaze"
          ],
@@ -131,8 +131,8 @@
          "highlight":[
             "melting."
          ],
-         "title":"I'm|fucking|melting.",
-         "subline":"Take off your shirt and get wet.",
+         "title":"I'm|forking|melting.",
+         "subline":"Put on your swim gear, and get wet.",
          "min":23,
          "color":"#FF0000"
       },
@@ -140,7 +140,7 @@
          "highlight":[
             "hot."
          ],
-         "title":"It's so|fucking|hot.",
+         "title":"It's so|forking|hot.",
          "subline":"I wouldn't go outside for more information.",
          "min":25,
          "color":"#FF0000"
@@ -149,7 +149,7 @@
          "highlight":[
             "car wash"
          ],
-         "title":"It's|fucking|car wash|time.",
+         "title":"It's|forking|car wash|time.",
          "subline":"Exactly! It's going to be hot as shit.",
          "min":24,
          "color":"#FF0F66"
@@ -158,7 +158,7 @@
          "highlight":[
             "naked."
          ],
-         "title":"Let's get|fucking|naked.",
+         "title":"Let's get|forking|naked.",
          "subline":"You heard it, it's going to be hot!",
          "min":24,
          "color":"#FF0F66"
@@ -167,7 +167,7 @@
          "highlight":[
             "warming."
          ],
-         "title":"Global|fucking|warming.",
+         "title":"Global|forking|warming.",
          "subline":"Yeah, let's blame Global Warming.",
          "min":30,
          "color":"#FF0000"
@@ -176,7 +176,7 @@
          "highlight":[
             "tropical"
          ],
-         "title":"It's|fucking|tropical.",
+         "title":"It's|forking|tropical.",
          "subline":"Ice Cream is my final answer.",
          "min":35,
          "color":"#FF0000"
@@ -194,8 +194,8 @@
          "highlight":[
             "you are"
          ],
-         "title":"I think|you are|fucking|hot.",
-         "subline":"Just kidding, but the fucking weather is.",
+         "title":"I think|you are|forking|hot.",
+         "subline":"Just kidding, but the forking weather is.",
          "min":25,
          "color":"#FF0000"
       },
@@ -204,7 +204,7 @@
             "hot."
          ],
          "title":"Drop it|like it's|hot.",
-         "subline":"*Don't drop your fucking iPhone though, seriously.",
+         "subline":"*Don't drop your forking iPhone though, seriously.",
          "min":35,
          "color":"#FF0000"
       },
@@ -212,7 +212,7 @@
          "highlight":[
             "BBQ"
          ],
-         "title":"It's|fucking|BBQ|time.",
+         "title":"It's|forking|BBQ|time.",
          "subline":"Vegetarians and Meat fans unite! BBQ is for all of us.",
          "min":24,
          "color":"#FF0000"
@@ -221,7 +221,7 @@
          "highlight":[
             "umbrella."
          ],
-         "title":"Get your|fucking|umbrella.",
+         "title":"Get your|forking|umbrella.",
          "subline":"Shitloads of rain is awaiting you.",
          "condition":"rain",
          "color":"#007EFF"
@@ -230,8 +230,8 @@
          "highlight":[
             "grey"
          ],
-         "title":"Fucking|fifty|shades|of grey.",
-         "subline":"Fucking grey clouds everywhere.",
+         "title":"Forking|fifty|shades|of meh.",
+         "subline":"Forking grey clouds everywhere.",
          "condition":"cloudy",
          "color":"#9F9F9F"
       },
@@ -239,8 +239,8 @@
          "highlight":[
             "thunder"
          ],
-         "title":"Fucking|thunder|storm.",
-         "subline":"It's time to sing the â€œFuck you Thunderâ€ song.",
+         "title":"Forking|thunder|storm.",
+         "subline":"It's time to sing Thunderstruck.",
          "condition":"wind",
          "color":"#9F9F9F"
       },
@@ -266,7 +266,7 @@
          "highlight":[
             "windy"
          ],
-         "title":"It's|getting|fucking|windy.",
+         "title":"It's|getting|forking|windy.",
          "subline":"The storm is coming - May the Force be with you.",
          "condition":"wind",
          "color":"#9F9F9F"
@@ -285,7 +285,7 @@
             "hot"
          ],
          "title":"It's|stupid|hot.",
-         "subline":"Even fucking Siri has no answer for you today.",
+         "subline":"Even forking Siri has no answer for you today.",
          "min":25,
          "color":"#FF0000"
       },
@@ -293,7 +293,7 @@
          "highlight":[
             "whiskey"
          ],
-         "title":"It's|fucking|whiskey|time.",
+         "title":"It's|forking|whiskey|time.",
          "subline":"This will warm you up. It's freezing!",
          "max":5,
          "color":"#004A96"
@@ -302,7 +302,7 @@
          "highlight":[
             "skiing"
          ],
-         "title":"It's|fucking|skiing|time.",
+         "title":"It's|forking|skiing|time.",
          "subline":"Snow every where, yay!",
          "condition":"snow",
          "color":"#004A96"
@@ -338,8 +338,8 @@
          "highlight":[
             "Frozen"
          ],
-         "title":"Frozen|fucking|weather.",
-         "subline":"It's fucking freezing right now, look outside.",
+         "title":"Frozen|forking|weather.",
+         "subline":"It's forking freezing right now, look outside.",
          "max":5,
          "color":"#004A96"
       },
@@ -347,8 +347,8 @@
          "highlight":[
             "zero"
          ],
-         "title":"Negative|fucking|zero.",
-         "subline":"It's fucking freezing right now, look outside!",
+         "title":"Negative|forking|zero.",
+         "subline":"It's forking freezing right now, look outside!",
          "max":0,
          "color":"#004A96"
       },
@@ -356,8 +356,8 @@
          "highlight":[
             "zero"
          ],
-         "title":"Below|fucking|zero.",
-         "subline":"It's fucking freezing right now, look outside!",
+         "title":"Below|forking|zero.",
+         "subline":"It's forking freezing right now, look outside!",
          "max":-1,
          "color":"#004A96"
       },
@@ -365,7 +365,7 @@
          "highlight":[
             "Cold"
          ],
-         "title":"Cold as|fucking|shit.",
+         "title":"Cold as|forking|shit.",
          "subline":"You heard it, unpack your space heater!",
          "max":4,
          "color":"#004A96"
@@ -374,7 +374,7 @@
          "highlight":[
             "chilly."
          ],
-         "title":"It's|getting|fucking|chilly.",
+         "title":"It's|getting|forking|chilly.",
          "subline":"You heard it, unpack your space heater!",
          "min":5,
          "max":10,
@@ -384,7 +384,7 @@
          "highlight":[
             "Frozen"
          ],
-         "title":"Frozen|fucking|fingers.",
+         "title":"Frozen|forking|fingers.",
          "subline":"Can't feel my fingers any more.",
          "max":0,
          "color":"#004A96"
@@ -393,7 +393,7 @@
          "highlight":[
             "Frost"
          ],
-         "title":"Frost|fucking|bite.",
+         "title":"Frost|forking|bite.",
          "subline":"Can't feel my fingers any more.",
          "max":0,
          "color":"#004A96"
@@ -402,7 +402,7 @@
          "highlight":[
             "cold"
          ],
-         "title":"As cold|as a|fucking|penguin.",
+         "title":"As cold|as a|forking|penguin.",
          "subline":"I have to admit, that sounds kinda cute.",
          "max":0,
          "color":"#004A96"
@@ -411,7 +411,7 @@
          "highlight":[
             "North"
          ],
-         "title":"North|fucking|pole.",
+         "title":"North|forking|pole.",
          "subline":"Nothing against the north pole, but seriously!",
          "max":0,
          "color":"#004A96"
@@ -429,7 +429,7 @@
          "highlight":[
             "ice age."
          ],
-         "title":"Fucking|ice age.",
+         "title":"Forking|ice age.",
          "subline":"The movie was great, the weather is not.",
          "max":0,
          "color":"#004A96"
@@ -438,8 +438,8 @@
          "highlight":[
             "arctic."
          ],
-         "title":"It's|fucking|arctic.",
-         "subline":"Can't feel my fucking fingers any more.",
+         "title":"It's|forking|arctic.",
+         "subline":"Can't feel my forking fingers any more.",
          "max":0,
          "color":"#004A96"
       },
@@ -447,8 +447,8 @@
          "highlight":[
             "ice."
          ],
-         "title":"Glacial|fucking|ice.",
-         "subline":"Can't feel my fucking fingers any more.",
+         "title":"Glacial|forking|ice.",
+         "subline":"Can't feel my forking fingers any more.",
          "max":0,
          "color":"#004A96"
       },
@@ -456,8 +456,8 @@
          "highlight":[
             "Numb"
          ],
-         "title":"Numb|fucking|fingers.",
-         "subline":"Can't feel my fucking fingers any more.",
+         "title":"Numb|forking|fingers.",
+         "subline":"Can't feel my forking fingers any more.",
          "max":3,
          "color":"#004A96"
       },
@@ -465,7 +465,7 @@
          "highlight":[
             "thermic."
          ],
-         "title":"Hypo|fucking|thermic.",
+         "title":"Hypo|forking|thermic.",
          "subline":"A friend of mine called Tim said that. Smartypants.",
          "max":-3,
          "color":"#004A96"
@@ -474,7 +474,7 @@
          "highlight":[
             "breezy."
          ],
-         "title":"Breezy|fucking|breezy.",
+         "title":"Breezy|forking|breezy.",
          "subline":"It's getting cold outside!",
          "max":6,
          "color":"#004A96"
@@ -483,7 +483,7 @@
          "highlight":[
             "foggy."
          ],
-         "title":"It's|fucking|foggy.",
+         "title":"It's|forking|foggy.",
          "subline":"It's getting cold outside!",
          "condition":"fog",
          "color":"#004A96"
@@ -492,7 +492,7 @@
          "highlight":[
             "windy"
          ],
-         "title":"It's|fucking|windy.",
+         "title":"It's|forking|windy.",
          "subline":"It's getting cold outside!",
          "condition":"wind",
          "color":"#004A96"
@@ -511,7 +511,7 @@
          "highlight":[
             "okay."
          ],
-         "title":"It's|fucking|okay.",
+         "title":"It's|forking|okay.",
          "subline":"Look outside for more information.",
          "min":9,
          "max":20,
@@ -522,7 +522,7 @@
             "freezing."
          ],
          "title":"It's|ducking|freezing.",
-         "subline":"Oh damnit you fucking autocorrect.",
+         "subline":"Oh damnit you forking autocorrect.",
          "max":3,
          "color":"#004A96"
       },
@@ -540,7 +540,7 @@
          "highlight":[
             "frosty"
          ],
-         "title":"It's|frosty|as fuck.",
+         "title":"It's|frosty|as fork.",
          "subline":"This is for you my Scottish friends.",
          "max":0,
          "color":"#004A96"
@@ -558,8 +558,8 @@
          "highlight":[
             "freeze."
          ],
-         "title":"Fucking|brain|freeze.",
-         "subline":"Fuck Yeah Ice Cream!",
+         "title":"Forking|brain|freeze.",
+         "subline":"Fork Yeah Ice Cream!",
          "min":20,
          "color":"#FF0000"
       },
@@ -567,7 +567,7 @@
          "highlight":[
             "Sun"
          ],
-         "title":"Sun|fucking|glasses.",
+         "title":"Sun|forking|glasses.",
          "subline":"Time to put on my coolest shades.",
          "min":15,
          "condition":"clear",
@@ -577,8 +577,8 @@
          "highlight":[
             "fried."
          ],
-         "title":"Let's get|fucking|fried.",
-         "subline":"Take off your shirt but keep on the panties.",
+         "title":"Let's get|forking|fried.",
+         "subline":"Lose the hoodie, but keep on the shorts.",
          "min":20,
          "color":"#FF0000"
       },
@@ -586,8 +586,8 @@
          "highlight":[
             "boat"
          ],
-         "title":"I'm on a|fucking|boat.",
-         "subline":"It's hot! Take off your shirt, keep on your pants.",
+         "title":"I'm on a|forking|boat.",
+         "subline":"It's hot! Lose the hoodie, keep on your pants.",
          "min":20,
          "color":"#FF0000"
       },
@@ -633,7 +633,7 @@
          "highlight":[
             "beard."
          ],
-         "title":"Grow a|fucking|beard.",
+         "title":"Grow a|forking|beard.",
          "subline":"It's freezing outside, you will need it.",
          "max":4,
          "color":"#004A96"

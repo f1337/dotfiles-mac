@@ -1,10 +1,21 @@
 # Bing photo background created by Sam Roach 1/21/2016
 # Unsplash photo background added by Michael Fleet 3/3/2020
 
+# api key
 accessKey = ""
 
+# time of day
+hour = new Date().getHours()
+if (hour > 5 && hour < 12)
+  time_query = 'morning'
+else if (hour > 11 && hour < 20)
+  time_query = 'day'
+else
+  time_query = 'night'
+
+
 # https://unsplash.com/documentation#get-a-random-photo
-query = "beach,ocean" # search terms
+query = "beach,ocean,nature,#{time_query}" # search terms
 collections = "" # Public collection ID(‘s) to filter selection. If multiple, comma-separated
 # Filter search results by photo orientation. Valid values are landscape, portrait, and squarish.
 orientation = "landscape"
