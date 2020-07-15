@@ -62,6 +62,12 @@ Communication Tools
 Development Tools
 -----------------
 
+### Dash
+
+Offline documentation
+
+    brew cask install dash
+
 ### Docker
 
     brew cask install docker
@@ -111,9 +117,11 @@ Pairing/mobbing tool, from one of the original Screenhero co-founders.
     code --install-extension bierner.markdown-emoji
     code --install-extension bierner.markdown-preview-github-styles
     code --install-extension CoenraadS.bracket-pair-colorizer-2
+    code --install-extension deerawan.vscode-dash
     code --install-extension dracula-theme.theme-dracula
     code --install-extension eamodio.gitlens
     code --install-extension esbenp.prettier-vscode
+    code --install-extension fabiospampinato.vscode-todo-plus
     code --install-extension jeff-hykin.code-eol
     code --install-extension lourenci.go-to-spec
     code --install-extension mikestead.dotenv
