@@ -9,6 +9,8 @@
 
 # toggle window fullscreen
 cmd + ctrl - f : yabai -m window --toggle zoom-fullscreen
+
+# toggle padding
 cmd + ctrl - o : yabai -m space --toggle padding
 
 # toggle window native fullscreen
@@ -18,7 +20,7 @@ cmd + ctrl + shift - f : yabai -m window --toggle native-fullscreen
 cmd + ctrl - d : yabai -m window --toggle zoom-parent
 
 # rotate tree
-# cmd + ct rl - r : chunkc tiling::desktop --rotate 90
+cmd + ctrl - r : chunkc tiling::desktop --rotate 90
 
 # toggle window split type
 cmd + ctrl - s : yabai -m window --toggle split
