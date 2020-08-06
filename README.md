@@ -62,6 +62,15 @@ Communication Tools
 Development Tools
 -----------------
 
+### asdf
+
+    brew install asdf
+    ln -s $(pwd)/.asdfrc ~/.asdfrc
+    asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+    # asdf install ruby 2.6.6
+    asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+    # asdf install nodejs 8.17.0
+
 ### Dash
 
 Offline documentation
@@ -71,7 +80,6 @@ Offline documentation
 ### Docker
 
     brew cask install docker
-
 
 ### Fonts
 

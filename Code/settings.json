@@ -81,5 +81,9 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.semanticHighlighting.enabled": true,
   "java.configuration.checkProjectSettingsExclusions": false,
-  "tabnine.experimentalAutoImports": true
+  "tabnine.experimentalAutoImports": true,
+  "workbench.editor.showTabs": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
