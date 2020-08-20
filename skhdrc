@@ -92,7 +92,6 @@ ctrl + shift - t : yabai -m window --swap south
 ctrl + shift - n : yabai -m window --swap east
 
 
-
 #################
 # Window sizing #
 #################

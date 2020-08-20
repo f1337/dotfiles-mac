@@ -66,10 +66,12 @@ Development Tools
 
     brew install asdf
     ln -s $(pwd)/.asdfrc ~/.asdfrc
-    asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-    # asdf install ruby 2.6.6
-    asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-    # asdf install nodejs 8.17.0
+    asdf plugin-add ruby
+    asdf install ruby latest
+    asdf plugin-add nodejs
+    asdf install nodejs latest
+    asdf plugin-add yarn
+    asdf install yarn latest
 
 ### Dash
 
@@ -372,7 +374,8 @@ For flashing keyboard firmware.
 Desktop customization
 
     brew cask install ubersicht
-    ln -s $(pwd)/ubersicht/widgets/*.widget ~/Library/Application\ Support/Übersicht/widgets/
+    rm -rf ~/Library/Application\ Support/Übersicht/widgets
+    ln -s $(pwd)/ubersicht/widgets ~/Library/Application\ Support/Übersicht/
 
 
 ### VLC

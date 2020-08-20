@@ -48,12 +48,14 @@ yabai -m rule --add app="^WhatsApp$" space=^3
 yabai -m rule --add app="^Slack$" space=^3
 yabai -m rule --add app="^turtl$" space=^4
 yabai -m rule --add app="^zoom.us$" space=^4
+
 yabai -m rule --add app="^Atom$" space=^5
-yabai -m rule --add app="^Dash$" space=^5
-yabai -m rule --add app="^Visual Studio Code$" space=^5
+yabai -m rule --add app="^Code$" space=^5
 yabai -m rule --add app="^Hyper$" space=^5
-yabai -m rule --add app="^iTerm$" space=^5
+yabai -m rule --add app="^iTerm2$" space=^5
 yabai -m rule --add app="^Terminal$" space=^5
+
+yabai -m rule --add app="^Dash$" space=^6
 yabai -m rule --add app="^Firefox$" space=^6
 yabai -m rule --add app="^Chrome$" space=^6
 
