@@ -101,14 +101,28 @@ alias ll="ls -la"
 
 # ansible
 export ANSIBLE_COW_SELECTION=sloth
+export ANSIBLE_COW_PATH=/usr/local/bin/lolcowsay
+export ANSIBLE_COWPATH=$ANSIBLE_COW_PATH
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # thefuck
-eval $(thefuck --alias f)
-alias wtf="f -y"
-alias wtaf="f -d"
+eval $(thefuck --alias wat)
+alias wtf="wat -y"
+
+command_not_found_handler () {
+  TF_SHELL_ALIASES=$(alias);
+  TF_CMD=$(
+      export TF_SHELL_ALIASES;
+      export TF_SHELL=zsh;
+      export TF_ALIAS=fuck;
+      export TF_HISTORY="$@";
+      export PYTHONIOENCODING=utf-8;
+      thefuck THEFUCK_ARGUMENT_PLACEHOLDER
+  ) && eval $TF_CMD;
+  test -n "$TF_CMD" && print -s $TF_CMD;
+}
 
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

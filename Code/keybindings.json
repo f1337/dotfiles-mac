@@ -8,6 +8,7 @@
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
     },
+    // TDD keybinds
     {
         "key": "ctrl+alt+cmd+t",
         "command": "test-explorer.run-this-test"
@@ -19,5 +20,66 @@
     {
         "key": "ctrl+alt+cmd+r",
         "command": "test-explorer.rerun"
-    }
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "extension.runFileSpecs"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "-extension.runFileSpecs"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    // bullet/mood journal keybinds
+    {
+        "key": "alt+enter",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceLangId == markdown",
+        "args": {
+            "snippet": "${CURRENT_DAY_NAME/(.*)/${1:/downcase}/}, $CURRENT_DATE ${CURRENT_MONTH_NAME_SHORT/(.*)/${1:/downcase}/} $CURRENT_YEAR\n"
+        }
+    },
+    {
+        "key": "alt+c",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceLangId == markdown",
+        "args": {
+            "snippet": "💖 "
+        }
+    },
+    {
+        "key": "alt+d",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceLangId == markdown",
+        "args": {
+            "snippet": "✅ "
+        }
+    },
+    {
+        "key": "alt+f",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceLangId == markdown",
+        "args": {
+            "snippet": "${1|😀 ,😭 ,😱 |}"
+        }
+    },
+    {
+        "key": "alt+g",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceLangId == markdown",
+        "args": {
+            "snippet": "🙏🏻 "
+        }
+    },
+    {
+        "key": "alt+m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceLangId == markdown",
+        "args": {
+            "snippet": "🌀 "
+        }
+    },
 ]

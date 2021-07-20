@@ -42,8 +42,6 @@
   "files.trimTrailingWhitespace": true,
   "workbench.startupEditor": "newUntitledFile",
   "terminal.integrated.fontFamily": "MesloLGS-RegularForPowerline",
-  "ruby.format": "rubocop",
-  "window.zoomLevel": 1,
   "terminal.integrated.fontSize": 14,
   "cSpell.diagnosticLevel": "Error",
   "cSpell.languageSettings": [
@@ -56,10 +54,10 @@
   ],
   "editor.scrollBeyondLastLine": false,
   "extensions.ignoreRecommendations": true,
-  "editor.wordWrapColumn": 100,
+  "editor.wordWrapColumn": 120,
   "editor.rulers": [
+
     80,
-    100,
     120
   ],
   "editor.multiCursorModifier": "alt",
@@ -67,12 +65,12 @@
   "testExplorer.addToEditorContextMenu": true,
   "rubyTestExplorer.testFramework": "rspec",
   "rubyTestExplorer.logpanel": true,
-  "ruby.intellisense": "rubyLocate",
-  "ruby.interpreter.commandPath": "$HOME/.rbenv/shims/ruby",
+  "ruby.interpreter.commandPath": "$HOME/.asdf/shims/ruby",
   "ruby.lint": {
     "rubocop": {
+      "useBundler": true,
       "lint": true,
-      "rails": true
+      "rails": false
     }
   },
   "explorer.compactFolders": false,
@@ -83,7 +81,27 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "tabnine.experimentalAutoImports": true,
   "workbench.editor.showTabs": true,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "ruby.useBundler": true,
+  "prettier.packageManager": "yarn",
+  "prettier.semi": false,
+  "ruby.intellisense": "rubyLocate",
+  "prettier.arrowParens": "avoid",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnSave": true,
+  "prettier.disableLanguages": [
+    "ruby"
+  ],
+  "ruby.format": "rubocop",
+  "todo.file.name": "*.todo",
+  "window.zoomLevel": 1,
+  "cSpell.userWords": [
+    "emdr",
+    "ketamine",
+    "neurotypical",
+    "ptsd"
+  ],
+  "cSpell.logLevel": "Warning",
+  "security.workspace.trust.untrustedFiles": "open"
 }

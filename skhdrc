@@ -115,12 +115,4 @@ ctrl + alt + shift - 0 : yabai -m space --balance
 
 # apply 4-column layout w/ double-size center colmun
 # term - editor double wide - term
-cmd + ctrl + alt - 3   : yabai -m space --layout float && \
-                         lid="$(yabai -m query --windows --space | jq 'map(select(."app" == "iTerm2"))[0].id')" && \
-                         rid="$(yabai -m query --windows --space | jq 'map(select(."app" == "iTerm2"))[1].id')" && \
-                         cid="$(yabai -m query --windows --space | jq 'map(select(."app" == "Code"))[0].id')" && \
-                         yabai -m window "${lid}" --grid 1:4:0:0:1:1 && \
-                         yabai -m window "${cid}" --grid 1:4:1:0:2:1 && \
-                         yabai -m window "${rid}" --grid 1:4:3:0:1:1 && \
-                         yabai -m window "${lid}" --resize right:-16:0 && \
-                         yabai -m window "${rid}" --resize left:16:0
+cmd + ctrl + alt - 3   : yabai-columns-3

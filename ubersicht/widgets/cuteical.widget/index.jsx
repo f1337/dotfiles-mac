@@ -206,6 +206,7 @@ export const render = (output) => {
 };
 
 const setupAlarmCallbacks = (datetime, startCallback, endCallback) => {
+  return;
   let now = moment();
   let endTimeout = 0;
   let startTimeout = 0;

@@ -23,6 +23,8 @@ bundle: brew ## install apps from Brewfile
 .PHONY: asdf
 asdf: ## configure asdf, install plugins
 	ln -s $(pwd)/.asdfrc ~/.asdfrc
+	ln -s $(pwd)/.tool-versions ~/.tool-versions
+	ln -s $(pwd)/gemrc ~/.gemrc
 	asdf plugin-add ruby
 	asdf install ruby latest
 	asdf plugin-add nodejs
@@ -34,8 +36,8 @@ asdf: ## configure asdf, install plugins
 cows: ## install lolcat, custom cows
 	sudo gem install lolcat
 	install -m 644 cows/*.cow /usr/local/opt/cowsay/share/cows/
-	cp lolcowsay /usr/local/bin/
-	ln -s $(pwd)/lolcowsay /usr/local/bin/lolcowsay
+	# cp lolcowsay /usr/local/bin/
+	# ln -s $(pwd)/lolcowsay /usr/local/bin/lolcowsay
 
 .PHONY: git
 git: ## configure git
@@ -79,11 +81,17 @@ vscode: ## configure vscode, install extensions
 	ln -s $(pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
 
 .PHONY: wm
-wm: ## configure yabai wm
-	ln -s $(pwd)/yabairc ~/.yabairc
-	ln -s $(pwd)/skhdrc ~/.skhdrc
-	brew services start yabai
-	brew services start skhd
+wm: $(HOME)/.skhdrc $(HOME)/.yabairc ## configure yabai wm
+	install -m 755 bin/yabai-columns-3 /usr/local/bin/
+	# install -m 755 bin/yabai-fullscreen /usr/local/bin/
+	brew services restart yabai
+	brew services restart skhd
+
+$(HOME)/.skhdrc:
+	ln -s $(pwd)/skhdrc $(HOME)/.skhdrc
+
+$(HOME)/.yabairc:
+	ln -s $(pwd)/yabairc $(HOME)/.yabairc
 
 .PHONY: zsh
 zsh: # configure zsh, install plugins

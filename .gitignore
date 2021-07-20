@@ -5,3 +5,5 @@
 .Spotlight-V100
 .Trashes
 .vscode
+*.local.yml
+.tool-versions

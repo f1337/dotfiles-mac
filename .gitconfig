@@ -2,6 +2,17 @@
 	excludesfile = ~/.gitignore
 	editor = /usr/local/bin/code --wait
 [diff]
-  tool = visual-studio-code
-[difftool "visual-studio-code"]
-  cmd = /usr/local/bin/code --wait --diff $LOCAL $REMOTE
+	tool = meld
+[difftool]
+	prompt = false
+[difftool "meld"]
+	cmd = meld "$LOCAL" "$REMOTE"
+[merge]
+  tool = meld
+[mergetool]
+	prompt = false
+[mergetool "meld"]
+  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[user]
+	name = Michael R. Fleet
+	email = f1337@f1337.us
