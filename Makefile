@@ -28,7 +28,7 @@ asdf: ## configure asdf, install plugins
 	asdf plugin-add ruby
 	asdf install ruby latest
 	asdf plugin-add nodejs
-	asdf install nodejs latest
+	asdf install nodejs lts
 	asdf plugin-add yarn
 	asdf install yarn latest
 
@@ -45,7 +45,7 @@ git: ## configure git
 	ln -s $(pwd)/.gitignore ~/.gitignore
 
 .PHONY: pock
-pock:
+pock: ## configure pock
 	ln -s $(pwd)/Library/Preferences/com.pigigaldi.pock.plist ~/Library/Preferences/com.pigigaldi.pock.plist
 
 .PHONY: sounds
@@ -61,7 +61,6 @@ ubersicht: ## configure ubersicht
 vscode: ## configure vscode, install extensions
 	code --install-extension bierner.markdown-emoji
 	code --install-extension bierner.markdown-preview-github-styles
-	code --install-extension CoenraadS.bracket-pair-colorizer-2
 	code --install-extension deerawan.vscode-dash
 	code --install-extension dracula-theme.theme-dracula
 	code --install-extension eamodio.gitlens
@@ -95,8 +94,6 @@ $(HOME)/.yabairc:
 
 .PHONY: zsh
 zsh: # configure zsh, install plugins
-	echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
-	chsh -s /usr/local/bin/zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	git clone https://github.com/bhilburn/powerlevel9k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
 	git clone git@github.com:marzocchi/zsh-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify

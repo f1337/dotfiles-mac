@@ -16,3 +16,5 @@
 [user]
 	name = Michael R. Fleet
 	email = f1337@f1337.us
+[pull]
+	ff = only

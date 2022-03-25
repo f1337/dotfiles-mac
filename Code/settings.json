@@ -81,27 +81,31 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "tabnine.experimentalAutoImports": true,
   "workbench.editor.showTabs": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "ruby.useBundler": true,
-  "prettier.packageManager": "yarn",
   "prettier.semi": false,
   "ruby.intellisense": "rubyLocate",
   "prettier.arrowParens": "avoid",
   "editor.formatOnPaste": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnSave": true,
-  "prettier.disableLanguages": [
-    "ruby"
-  ],
   "ruby.format": "rubocop",
   "todo.file.name": "*.todo",
-  "window.zoomLevel": 1,
   "cSpell.userWords": [
+    "activestorage",
     "emdr",
     "ketamine",
     "neurotypical",
-    "ptsd"
+    "ptsd",
+    "turbolinks",
+    "workstreams"
   ],
   "cSpell.logLevel": "Warning",
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "scss.lint.unknownAtRules": "ignore",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.zoomLevel": 1,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true
 }

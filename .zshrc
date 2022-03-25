@@ -1,5 +1,26 @@
+###################################################
+# asdf
+###################################################
+
 # asdf
 . $(brew --prefix asdf)/asdf.sh
+
+# asdf-java
+. ~/.asdf/plugins/java/set-java-home.zsh
+
+###################################################
+# minikube
+###################################################
+
+# add this entry to ~/.bashrc or ~/.zshrc to work in all terminal sessions
+eval $(minikube docker-env)
+
+# add minikube ip to /etc/hosts if want
+# echo "`minikube ip` docker.local" | sudo tee -a /etc/hosts > /dev/null
+
+###################################################
+# oh-my-zsh
+###################################################
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -101,8 +122,8 @@ alias ll="ls -la"
 
 # ansible
 export ANSIBLE_COW_SELECTION=sloth
-export ANSIBLE_COW_PATH=/usr/local/bin/lolcowsay
-export ANSIBLE_COWPATH=$ANSIBLE_COW_PATH
+#export ANSIBLE_COW_PATH=/usr/local/bin/lolcowsay
+#export ANSIBLE_COWPATH=$ANSIBLE_COW_PATH
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
