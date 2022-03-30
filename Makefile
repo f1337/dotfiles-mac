@@ -10,11 +10,11 @@ help:  ## print documentation for available commands
 		}' $(MAKEFILE_LIST)
 
 .PHONY: install
-install: brew bundle asdf cows git pock sounds vscode wm zsh ## install & configure everything
+install: brew bundle asdf cows git pock sounds vscode zsh #wm ## install & configure everything
 
 .PHONY: brew
 brew: ## install homebrew
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	sh -c $$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
 
 .PHONY: bundle
 bundle: brew ## install apps from Brewfile
@@ -22,31 +22,34 @@ bundle: brew ## install apps from Brewfile
 
 .PHONY: asdf
 asdf: ## configure asdf, install plugins
-	ln -s $(pwd)/.asdfrc ~/.asdfrc
-	ln -s $(pwd)/.tool-versions ~/.tool-versions
-	ln -s $(pwd)/gemrc ~/.gemrc
-	asdf plugin-add ruby
+	ln -Ffs $(PWD)/.asdfrc ~/.asdfrc
+	ln -Ffs $(PWD)/.tool-versions ~/.tool-versions
+	ln -Ffs $(PWD)/gemrc ~/.gemrc
+	asdf plugin-add ruby | sed '/already/d'
 	asdf install ruby latest
-	asdf plugin-add nodejs
+	asdf plugin-add nodejs | sed '/already/d'
 	asdf install nodejs lts
-	asdf plugin-add yarn
+	asdf plugin-add yarn | sed '/already/d'
 	asdf install yarn latest
 
 .PHONY: cows
 cows: ## install lolcat, custom cows
 	sudo gem install lolcat
-	install -m 644 cows/*.cow /usr/local/opt/cowsay/share/cows/
-	# cp lolcowsay /usr/local/bin/
-	# ln -s $(pwd)/lolcowsay /usr/local/bin/lolcowsay
+	install -m 644 cows/*.cow $(HOMEBREW_PREFIX)/opt/cowsay/share/cows/
+	ln -Ffs $(PWD)/lolcowsay /usr/local/bin/lolcowsay
+
+.PHONY: entertainment
+entertainment: ## install entertainment apps
+	brew bundle --file=Entertainment.brewfile
 
 .PHONY: git
 git: ## configure git
-	ln -s $(pwd)/.gitconfig ~/.gitconfig
-	ln -s $(pwd)/.gitignore ~/.gitignore
+	ln -Ffs $(PWD)/.gitconfig ~/.gitconfig
+	ln -Ffs $(PWD)/.gitignore ~/.gitignore
 
 .PHONY: pock
 pock: ## configure pock
-	ln -s $(pwd)/Library/Preferences/com.pigigaldi.pock.plist ~/Library/Preferences/com.pigigaldi.pock.plist
+	ln -Ffs $(PWD)/Library/Preferences/com.pigigaldi.pock.plist ~/Library/Preferences/com.pigigaldi.pock.plist
 
 .PHONY: sounds
 sounds: ## install custom notification sounds
@@ -55,7 +58,7 @@ sounds: ## install custom notification sounds
 .PHONY: ubersicht
 ubersicht: ## configure ubersicht
 	rm -rf ~/Library/Application\ Support/Übersicht/widgets
-	ln -s $(pwd)/ubersicht/widgets ~/Library/Application\ Support/Übersicht/
+	ln -Ffs $(PWD)/ubersicht/widgets ~/Library/Application\ Support/Übersicht/
 
 .PHONY: vscode
 vscode: ## configure vscode, install extensions
@@ -71,13 +74,12 @@ vscode: ## configure vscode, install extensions
 	code --install-extension mikestead.dotenv
 	code --install-extension ms-azuretools.vscode-docker
 	code --install-extension rebornix.ruby
-	code --install-extension robertohuertasm.vscode-icons
 	code --install-extension streetsidesoftware.code-spell-checker
 	code --install-extension TabNine.tabnine-vscode
 	code --install-extension wingrunr21.vscode-ruby
 	code --install-extension ziyasal.vscode-open-in-github
-	ln -s $(pwd)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
-	ln -s $(pwd)/Code/settings.json ~/Library/Application\ Support/Code/User/
+	ln -Ffs $(PWD)/Code/keybindings.json ~/Library/Application\ Support/Code/User/
+	ln -Ffs $(PWD)/Code/settings.json ~/Library/Application\ Support/Code/User/
 
 .PHONY: wm
 wm: $(HOME)/.skhdrc $(HOME)/.yabairc ## configure yabai wm
@@ -87,14 +89,14 @@ wm: $(HOME)/.skhdrc $(HOME)/.yabairc ## configure yabai wm
 	brew services restart skhd
 
 $(HOME)/.skhdrc:
-	ln -s $(pwd)/skhdrc $(HOME)/.skhdrc
+	ln -Ffs $(PWD)/skhdrc $(HOME)/.skhdrc
 
 $(HOME)/.yabairc:
-	ln -s $(pwd)/yabairc $(HOME)/.yabairc
+	ln -Ffs $(PWD)/yabairc $(HOME)/.yabairc
 
 .PHONY: zsh
 zsh: # configure zsh, install plugins
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	git clone https://github.com/bhilburn/powerlevel9k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
-	git clone git@github.com:marzocchi/zsh-notify.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify
-	ln -s $(pwd)/.zshrc ~/.zshrc
+	sh -c $$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
+	ln -Ffs $(PWD)/.zshrc ~/.zshrc
+	git clone https://github.com/bhilburn/powerlevel9k.git $${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
+	git clone git@github.com:marzocchi/zsh-notify.git $${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify

@@ -8,6 +8,7 @@ Automated Install
 
 ```
 make install
+make entertainment # optionally install entertainment software
 ```
 
 See the [Makefile](Makefile) and [Brewfile](Brewfile) for details about what exactly is installed.

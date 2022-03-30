@@ -122,11 +122,9 @@ alias ll="ls -la"
 
 # ansible
 export ANSIBLE_COW_SELECTION=sloth
-#export ANSIBLE_COW_PATH=/usr/local/bin/lolcowsay
-#export ANSIBLE_COWPATH=$ANSIBLE_COW_PATH
 
 # autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # thefuck
 eval $(thefuck --alias wat)
@@ -146,7 +144,7 @@ command_not_found_handler () {
 }
 
 # zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # powerlevel customizations
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
