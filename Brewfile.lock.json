@@ -14,10 +14,13 @@
         "revision": "262209f9a532621dfefd543f347ccee846d93932"
       },
       "homebrew/core": {
-        "revision": "c5edd122d0944820003cb00b0a749787f3f7cc36"
+        "revision": "23bb781b370b23eef77f8d261330c5f9583ac3ea"
       },
       "homebrew/services": {
         "revision": "95c7ca2cb9c1bc03866994ecbb05fe3c2ad6a494"
+      },
+      "koekeishiya/formulae": {
+        "revision": "e611d2d1e400826ede4a68a5e8742033bd75a082"
       }
     },
     "brew": {
@@ -628,6 +631,20 @@
             }
           }
         }
+      },
+      "koekeishiya/formulae/yabai": {
+        "version": "4.0.0",
+        "bottle": false,
+        "options": {
+          "restart_service": true
+        }
+      },
+      "koekeishiya/formulae/skhd": {
+        "version": "0.3.5",
+        "bottle": false,
+        "options": {
+          "restart_service": true
+        }
       }
     },
     "cask": {
@@ -850,7 +867,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.4.4",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "c5edd122d0944820003cb00b0a749787f3f7cc36",
+        "Homebrew/homebrew-core": "23bb781b370b23eef77f8d261330c5f9583ac3ea",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.1"

@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "koekeishiya/formulae"
 brew "ansible"
 brew "asdf"
 brew "autojump"
@@ -14,11 +15,11 @@ brew "gh"
 brew "jq"
 brew "mas"
 brew "ponysay"
-#brew "skhd", restart_service: true
+brew "koekeishiya/formulae/skhd", restart_service: true
 brew "terminal-notifier"
 brew "thefuck"
 brew "tig"
-#brew "yabai", restart_service: true
+brew "koekeishiya/formulae/yabai", restart_service: true
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "cjbassi/ytop/ytop"
