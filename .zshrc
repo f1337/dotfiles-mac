@@ -6,17 +6,7 @@
 . $(brew --prefix asdf)/asdf.sh
 
 # asdf-java
-. ~/.asdf/plugins/java/set-java-home.zsh
-
-###################################################
-# minikube
-###################################################
-
-# add this entry to ~/.bashrc or ~/.zshrc to work in all terminal sessions
-eval $(minikube docker-env)
-
-# add minikube ip to /etc/hosts if want
-# echo "`minikube ip` docker.local" | sudo tee -a /etc/hosts > /dev/null
+#. ~/.asdf/plugins/java/set-java-home.zsh
 
 ###################################################
 # oh-my-zsh
