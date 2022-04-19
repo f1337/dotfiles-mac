@@ -105,7 +105,9 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "window.zoomLevel": 1,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true
+  "editor.guides.bracketPairs": true,
+  "todo.symbols.box": "- [ ]",
+  "todo.symbols.cancelled": "- [-]",
+  "todo.symbols.done": "- [x]"
 }

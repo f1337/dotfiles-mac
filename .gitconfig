@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = /usr/local/bin/code --wait
+	editor = $(which code) --wait
 [diff]
 	tool = meld
 [difftool]

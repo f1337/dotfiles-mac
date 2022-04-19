@@ -33,8 +33,7 @@ asdf: ## configure asdf, install plugins
 	asdf install yarn latest
 
 .PHONY: cows
-cows: ## install lolcat, custom cows
-	sudo gem install lolcat
+cows: ## custom cows
 	install -m 644 cows/*.cow $(HOMEBREW_PREFIX)/opt/cowsay/share/cows/
 	ln -Ffs $(PWD)/lolcowsay /usr/local/bin/lolcowsay
 
