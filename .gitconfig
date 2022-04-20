@@ -18,3 +18,5 @@
 	email = f1337@f1337.us
 [pull]
 	ff = only
+[init]
+	defaultBranch = main

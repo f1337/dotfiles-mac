@@ -112,6 +112,8 @@ alias ll="ls -la"
 
 # ansible
 export ANSIBLE_COW_SELECTION=sloth
+export ANSIBLE_COW_PATH=/usr/local/bin/lolcowsay
+export ANSIBLE_COWPATH=$ANSIBLE_COW_PATH
 
 # autojump
 [ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh

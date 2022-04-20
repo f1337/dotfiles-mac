@@ -34,8 +34,8 @@ asdf: ## configure asdf, install plugins
 
 .PHONY: cows
 cows: ## custom cows
-	install -m 644 cows/*.cow $(HOMEBREW_PREFIX)/opt/cowsay/share/cows/
-	ln -Ffs $(PWD)/lolcowsay /usr/local/bin/lolcowsay
+	install -m 644 cows/*.cow $(HOMEBREW_PREFIX)/opt/neo-cowsay/share/cows/
+	ln -Ffs $(PWD)/bin/lolcowsay /usr/local/bin/lolcowsay
 
 .PHONY: entertainment
 entertainment: ## install entertainment apps
