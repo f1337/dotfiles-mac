@@ -80,7 +80,6 @@
   "java.semanticHighlighting.enabled": true,
   "java.configuration.checkProjectSettingsExclusions": false,
   "tabnine.experimentalAutoImports": true,
-  "workbench.editor.showTabs": true,
   "ruby.useBundler": true,
   "prettier.semi": false,
   "ruby.intellisense": "rubyLocate",
@@ -107,7 +106,25 @@
   },
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-  "todo.symbols.box": "- [ ]",
-  "todo.symbols.cancelled": "- [-]",
-  "todo.symbols.done": "- [x]"
+  "todo.symbols.box": "[ ]",
+  "todo.symbols.cancelled": "[-]",
+  "todo.symbols.done": "[x]",
+  "coverage-gutters.showLineCoverage": true,
+  "coverage-gutters.showRulerCoverage": true,
+  "coverage-gutters.coverageReportFileName": "coverage/index.html",
+  "jest.autoRun": {
+    "watch": false,
+    "onSave": "test-src-file"
+  },
+  "go.coverageOptions": "showUncoveredCodeOnly",
+  "go.coverOnSave": true,
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
+  "jestrunner.preserveEditorFocus": true,
+  "jestrunner.runOptions": [
+    "--coverage=true"
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

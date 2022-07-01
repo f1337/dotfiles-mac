@@ -3,10 +3,20 @@
 ###################################################
 
 # asdf
-. $(brew --prefix asdf)/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # asdf-java
-#. ~/.asdf/plugins/java/set-java-home.zsh
+# . ~/.asdf/plugins/java/set-java-home.zsh
+
+###################################################
+# minikube
+###################################################
+
+# add this entry to ~/.bashrc or ~/.zshrc to work in all terminal sessions
+# eval $(minikube docker-env)
+
+# add minikube ip to /etc/hosts if want
+# echo "`minikube ip` docker.local" | sudo tee -a /etc/hosts > /dev/null
 
 ###################################################
 # oh-my-zsh
@@ -176,5 +186,6 @@ zstyle ':notify:*' command-complete-timeout 10
 zstyle ':notify:*' enable-on-ssh yes
 zstyle ':notify:*' error-sound "my-programming"
 zstyle ':notify:*' error-title '👎🏻 (#{time_elapsed})'
+zstyle ':notify:*' notifier $(brew --prefix alerter)
 zstyle ':notify:*' success-sound "roger"
 zstyle ':notify:*' success-title '👍🏻 (#{time_elapsed})'

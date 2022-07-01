@@ -2,21 +2,26 @@
 	excludesfile = ~/.gitignore
 	editor = $(which code) --wait
 [diff]
-	tool = meld
+  tool = vscode
 [difftool]
 	prompt = false
-[difftool "meld"]
-	cmd = meld "$LOCAL" "$REMOTE"
+[difftool "vscode"]
+  cmd = $(which code) --wait --diff $LOCAL $REMOTE
 [merge]
-  tool = meld
+  tool = vscode
 [mergetool]
 	prompt = false
-[mergetool "meld"]
-  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[mergetool "vscode"]
+  cmd = $(which code) --wait $MERGED
 [user]
 	name = Michael R. Fleet
-	email = f1337@f1337.us
+	email = michael.fleet@mode.com
 [pull]
 	ff = only
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
