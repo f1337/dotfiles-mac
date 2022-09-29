@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+# echo $@
+# echo $*
+
+type=$1
+sound="my-programming"
+if [ $type = "success" ]; then sound="roger"; fi
+
+elapsed=$2
+seconds=""
+if [ -n "$elapsed"  ]; then seconds=" (${elapsed}s)"; fi
+
+#alerter -message "Hi there" -title "This is awesome" -sender "com.apple.TextEdit"
+$(brew --prefix alerter)/bin/alerter -message "${type}${seconds}" -title "$type" -actions OK -sender "com.googlecode.iterm2" -sound "$sound"

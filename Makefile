@@ -97,5 +97,6 @@ $(HOME)/.yabairc:
 zsh: # configure zsh, install plugins
 	sh -c $$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 	ln -Ffs $(PWD)/.zshrc ~/.zshrc
+	ln -Ffs $(PWD)/zsh-notify-alerter ~/.zsh-notify-alerter
 	git clone https://github.com/bhilburn/powerlevel9k.git $${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel9k
 	git clone git@github.com:marzocchi/zsh-notify.git $${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify

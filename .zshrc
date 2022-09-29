@@ -5,6 +5,9 @@
 # asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
 
+# asdf-golang
+asdf reshim golang
+
 # asdf-java
 # . ~/.asdf/plugins/java/set-java-home.zsh
 
@@ -71,7 +74,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -186,6 +189,6 @@ zstyle ':notify:*' command-complete-timeout 10
 zstyle ':notify:*' enable-on-ssh yes
 zstyle ':notify:*' error-sound "my-programming"
 zstyle ':notify:*' error-title '👎🏻 (#{time_elapsed})'
-zstyle ':notify:*' notifier $(brew --prefix alerter)
+zstyle ':notify:*' notifier $HOME/.zsh-notify-alerter
 zstyle ':notify:*' success-sound "roger"
 zstyle ':notify:*' success-title '👍🏻 (#{time_elapsed})'
