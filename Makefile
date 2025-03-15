@@ -45,6 +45,7 @@ vscode: ## configure vscode, install extensions
 
 .PHONY: zsh
 zsh: # configure zsh, install plugins
+	ln -Ffs $(PWD)/.theme.omp.json ~/.theme.omp.json
 	ln -Ffs $(PWD)/.zshrc ~/.zshrc
 #	ln -Ffs $(PWD)/zsh-notify-alerter ~/.zsh-notify-alerter
 #	git clone git@github.com:marzocchi/zsh-notify.git $${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/notify
