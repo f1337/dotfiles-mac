@@ -1,20 +1,23 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = $(which code) --wait
+	editor = code --wait
+[color]
+        ui = true
 [diff]
   tool = vscode
 [difftool]
 	prompt = false
 [difftool "vscode"]
-  cmd = $(which code) --wait --diff $LOCAL $REMOTE
+  cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
   tool = vscode
 [mergetool]
 	prompt = false
 [mergetool "vscode"]
-  cmd = $(which code) --wait $MERGED
+  cmd = code --wait $MERGED
 [user]
 	name = Michael L. Fleet
+	email = f1337@f1337.us
 [pull]
 	ff = only
 [init]
