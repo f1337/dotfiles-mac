@@ -1,3 +1,20 @@
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+
+# use ! for history
+setopt BANG_HIST
+
+# append to the history file, don't overwrite it
+setopt APPEND_HISTORY
+
+# for setting history length see HISTSIZE and HISTFILESIZE in zsh
+HISTFILE=~/.history
+HISTSIZE=1000 # max lines per session
+SAVEHIST=3000 # max lines per histfile
+
 # aliases
 alias ll='ls -alF'
 alias la='ls -A'
