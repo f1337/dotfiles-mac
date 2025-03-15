@@ -18,6 +18,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # zsh-autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # oh-my-posh
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/dracula.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.mytheme.omp.json)"
 # asdf: needs to be last
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
