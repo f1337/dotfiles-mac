@@ -14,8 +14,7 @@
 [mergetool "vscode"]
   cmd = $(which code) --wait $MERGED
 [user]
-	name = Michael R. Fleet
-	email = michael.fleet@mode.com
+	name = Michael L. Fleet
 [pull]
 	ff = only
 [init]
