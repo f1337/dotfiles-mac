@@ -4,11 +4,14 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 
-# use ! for history
+# use !! for last command
 setopt BANG_HIST
 
 # append to the history file, don't overwrite it
 setopt APPEND_HISTORY
+
+# share history between sessions
+setopt SHARE_HISTORY
 
 # for setting history length see HISTSIZE and HISTFILESIZE in zsh
 HISTFILE=~/.history
